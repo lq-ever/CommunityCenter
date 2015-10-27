@@ -154,6 +154,17 @@
     <Compile Include="Activitys\ServerType\HouseKeep\HouseKeepMainActivity.cs" />
     <Compile Include="Activitys\ServerType\Nurse\NurseMainActivity.cs" />
     <Compile Include="Common\MyScrollView.cs" />
+    <Compile Include="Activitys\ServerType\Admin\GuardianApplyActivity.cs" />
+    <Compile Include="Adapter\GetApplyInfoListAadapter.cs" />
+    <Compile Include="Model\ServerType\Admin\GetApplyInfoListItem.cs" />
+    <Compile Include="Param\GetApplyInfoParam.cs" />
+    <Compile Include="Json\GetApplyInfoJson.cs" />
+    <Compile Include="Param\ExamineBundGuardianParam.cs" />
+    <Compile Include="Json\ExamineBundGuardianJson.cs" />
+    <Compile Include="Activitys\ServerType\Admin\BindGuardianActivity.cs" />
+    <Compile Include="Activitys\ServerType\Admin\AlarmRecordsActivity.cs" />
+    <Compile Include="Activitys\ServerType\Admin\HealthRecordsActivity.cs" />
+    <Compile Include="Activitys\ServerType\Admin\AdminSetActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -324,6 +335,13 @@
     <AndroidResource Include="Resources\layout\progressbar.axml" />
     <AndroidResource Include="Resources\layout\AboutUsLayout.axml" />
     <AndroidResource Include="Resources\layout\CertificateLayout.axml" />
+    <AndroidResource Include="Resources\layout\AdminMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\ErrandMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\HouseKeepMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\NurseMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\GuardianApplyLayout.axml" />
+    <AndroidResource Include="Resources\layout\getApplyInfoListItemView.axml" />
+    <AndroidResource Include="Resources\drawable\unbindselector.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -344,6 +362,13 @@
     <Folder Include="Activitys\ServerType\Nurse\" />
     <Folder Include="Activitys\ServerType\HouseKeep\" />
     <Folder Include="Activitys\ServerType\Errand\" />
+    <Folder Include="Model\ServerType\" />
+    <Folder Include="Model\My\" />
+    <Folder Include="Model\Finance\" />
+    <Folder Include="Model\ServerType\Admin\" />
+    <Folder Include="Model\ServerType\Errand\" />
+    <Folder Include="Model\ServerType\HouseKeep\" />
+    <Folder Include="Model\ServerType\Nurse\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JPushBindingLibrary\JPushBindingLibrary.csproj">
