@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.lelaozu.communitycenter">
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="22" />
+  <permission android:name="com.lelaozu.communitycenter.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+  <!-- Required  一些系统要求的权限，如访问网络等-->
+  <!--允许读取电话状态SIM的权限-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="com.lelaozu.communitycenter.permission.JPUSH_MESSAGE" />
+  <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <!-- Optional for location -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.READ_LOGS" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+  <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+  <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+  <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+  <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+  <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="md5f24a26c40d63a3a47028aca12244d2d7.CommunityCenterApplication" android:debuggable="true">
+    <!-- Required SDK核心功能push activity -->
+    <activity android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|keyboardHidden">
+      <intent-filter>
+        <action android:name="cn.jpush.android.ui.PushActivity" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="com.lelaozu.communitycenter" />
+      </intent-filter>
+    </activity>
+    <!-- Required  SDK核心功能 下载服务-->
+    <service android:name="cn.jpush.android.service.DownloadService" android:enabled="true" android:exported="false"></service>
+    <!-- Required SDK 核心功能  配置JPush推送服务-->
+    <service android:name="cn.jpush.android.service.PushService" android:enabled="true" android:exported="false">
+      <intent-filter>
+        <action android:name="cn.jpush.android.intent.REGISTER" />
+        <action android:name="cn.jpush.android.intent.REPORT" />
+        <action android:name="cn.jpush.android.intent.PushService" />
+        <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+      </intent-filter>
+    </service>
+    <!-- Required SDK核心功能 配置Jpush 广播接收者-->
+    <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true">
+      <intent-filter android:priority="1000">
+        <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+        <!--Required  显示通知栏 -->
+        <category android:name="com.lelaozu.communitycenter" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.USER_PRESENT" />
+        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+      <!-- Optional -->
+      <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_ADDED" />
+        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+        <data android:scheme="package" />
+      </intent-filter>
+    </receiver>
+    <!-- Required SDK核心功能 时钟相关接收者-->
+    <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+    <!-- User defined.  自定义的极光推送广播接收器-->
+    <receiver android:name="md515e7c36a454d8e894204c1815cf84009.CustomJPushReceiver" android:enabled="true">
+      <intent-filter>
+        <action android:name="cn.jpush.android.intent.REGISTRATION" />
+        <!--Required  用户注册SDK的intent-->
+        <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+        <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+        <!--Required  用户接收SDK消息的intent-->
+        <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+        <!--Required  用户接收SDK通知栏信息的intent-->
+        <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+        <!--Required  用户打开自定义通知栏的intent-->
+        <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+        <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+        <action android:name="cn.jpush.android.intent.CONNECTION" />
+        <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+        <category android:name="com.lelaozu.communitycenter" />
+      </intent-filter>
+    </receiver>
+    <!-- Required  . Enable it you can get statistics data with channel 值来自开发者平台取得的AppKey -->
+    <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default" />
+    <meta-data android:name="JPUSH_APPKEY" android:value="97b8f2bcb8ff74f4ea1559d2" />
+    <!--  使用百度地图API-->
+    <!-- release版 AK -->
+    <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="3nHrsEhS3RmqKnAhrVqloa8G" />
+    <!--- debug版 AK -->
+    <!--		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="9WsxQZv9L0lQakclbH4xrjzG" />-->
+    <activity android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.MainActivity" />
+    <activity android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.GuiderActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.AccountSecurityActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.AdviceActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoBirthActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoEmailActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoFixedPhoneActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoGenderActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoIdCardNoActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoIdCardNoLocationActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoTrueLocationActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoTrueNameActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SendSecurityCodeActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SetPasswordActivity" />
+    <activity android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.LoginActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.RegisterStepOneActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.RegisterResultActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.ServiceAgreeActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md54125644662cff5de38a3d5f4ade6869e.AlarmDetailInfoActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md54125644662cff5de38a3d5f4ade6869e.AlarmLocationActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SettingActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.AboutUsActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.CertificateActivity" />
+    <activity android:label="AdminMainActivity" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AdminMainActivity" />
+    <activity android:label="ErrandMainActivity" android:name="md524042b3cc831219d3008d39c37d5a7bd.ErrandMainActivity" />
+    <activity android:label="HouseKeepMainActivity" android:name="md57192d3cd22d5fce570e2bc3b5a159047.HouseKeepMainActivity" />
+    <activity android:label="NurseMainActivity" android:name="md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lelaozu.communitycenter.mono.MonoRuntimeProvider.__mono_init__" />
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.lelaozu.communitycenter" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

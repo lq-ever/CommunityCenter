@@ -1,0 +1,15 @@
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\CommunityCenter.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\BaiduMapApiBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\JPushBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\Mono.Android.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\mscorlib.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\Newtonsoft.Json.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\PullToRefresh.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\RestSharp.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\System.Core.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\System.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\System.Xml.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\UniversalImageLoader.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\System.Runtime.Serialization.dll
+E:\GitHub\CommunityCenter\CommunityCenter\obj\Debug\assemblies\System.Xml.Linq.dll

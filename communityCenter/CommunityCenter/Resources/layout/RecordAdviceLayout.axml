@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="留言类型"
+            android:textColor="@color/ingray"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+        <RadioGroup
+            android:id="@+id/radio_advice_Group"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <RadioButton
+                android:id="@+id/rbtn_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全部"
+                android:checked="true"
+                android:textColor="@color/darkgray"
+                android:button="@drawable/radiobutton_selector"
+                android:drawablePadding="20dp" />
+            <RadioButton
+                android:id="@+id/rbtn_zixun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="咨询"
+                android:textColor="@color/darkgray"
+                android:button="@drawable/radiobutton_selector"
+                android:drawablePadding="20dp" />
+            <RadioButton
+                android:id="@+id/rbtn_jianyi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="建议"
+                android:textColor="@color/darkgray"
+                android:button="@drawable/radiobutton_selector"
+                android:drawablePadding="20dp" />
+            <RadioButton
+                android:id="@+id/rbtn_tousu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="投诉"
+                android:textColor="@color/darkgray"
+                android:button="@drawable/radiobutton_selector"
+                android:drawablePadding="20dp" />
+            <RadioButton
+                android:id="@+id/rbtn_other"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="其它"
+                android:textColor="@color/darkgray"
+                android:button="@drawable/radiobutton_selector"
+                android:drawablePadding="20dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="共"
+            android:textColor="@color/darkgray"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/tv_recordNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/pink"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="条记录"
+            android:textColor="@color/darkgray"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        style="@style/pulltorefresh_lv"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_recordAdvice"
+        ptr:ptrHeaderTextColor="@color/ingray" />
+</LinearLayout>

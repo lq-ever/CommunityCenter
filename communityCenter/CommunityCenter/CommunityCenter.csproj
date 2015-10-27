@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{6B9A4506-3467-4FE6-B7BF-E40D4C95EA01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CommunityCenter</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>CommunityCenter</AssemblyName>
+    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UniversalImageLoader">
+      <HintPath>..\packages\Xamarin.Bindings.UniversalImageLoader.1.0.4\lib\MonoAndroid\UniversalImageLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PullToRefresh">
+      <HintPath>F:\android相关文档\Android-Binding-Libs\PullToRefresh.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="Common\Global.cs" />
+    <Compile Include="Common\EldYoungUtil.cs" />
+    <Compile Include="Common\EnDeCryptHelp.cs" />
+    <Compile Include="Common\CommunityCenterApplication.cs" />
+    <Compile Include="GuiderActivity.cs" />
+    <Compile Include="Adapter\GuiderViewPageAdapter.cs" />
+    <Compile Include="Common\CustomProgressDialog.cs" />
+    <Compile Include="Common\ProgressDialogUtil.cs" />
+    <Compile Include="Common\RestSharpRequestHelp.cs" />
+    <Compile Include="Common\CircleImageView.cs" />
+    <Compile Include="Common\CustomScrollView.cs" />
+    <Compile Include="Fragements\MainTab\MainTabMyFragment.cs" />
+    <Compile Include="Fragements\MainTab\MainTabServerFragment.cs" />
+    <Compile Include="Common\CustomGridView.cs" />
+    <Compile Include="Common\SelectPicPopWindow.cs" />
+    <Compile Include="Model\PersonInfoItem.cs" />
+    <Compile Include="Param\HeadImgPostParam.cs" />
+    <Compile Include="Param\BaseParam.cs" />
+    <Compile Include="Json\BaseJson.cs" />
+    <Compile Include="Json\HeadImgJson.cs" />
+    <Compile Include="Adapter\ServerItemAdapter.cs" />
+    <Compile Include="Model\ServerTypeItem.cs" />
+    <Compile Include="Fragements\MainTab\MainTabFinanceFragment.cs" />
+    <Compile Include="Activitys\My\AccountSecurityActivity.cs" />
+    <Compile Include="Activitys\My\AdviceActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoBirthActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoEmailActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoFixedPhoneActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoGenderActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoIdCardNoActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoIdCardNoLocationActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoTrueLocationActivity.cs" />
+    <Compile Include="Activitys\My\PersonInfoTrueNameActivity.cs" />
+    <Compile Include="Fragements\Advice\RecordAdviceFragment.cs" />
+    <Compile Include="Fragements\Advice\WriteAdviceFragment.cs" />
+    <Compile Include="Fragements\BaseFragment.cs" />
+    <Compile Include="Common\Enum.cs" />
+    <Compile Include="Adapter\AdviceRecordListAdapter.cs" />
+    <Compile Include="Model\AdviceRecordInfoItem.cs" />
+    <Compile Include="Param\AdviceRecordInfoListParam.cs" />
+    <Compile Include="Param\AdviceWriteParam.cs" />
+    <Compile Include="Json\AdviceRecordInfoJson.cs" />
+    <Compile Include="Json\AdviceWriteJson.cs" />
+    <Compile Include="Adapter\ViewFragmentPagerAdapter.cs" />
+    <Compile Include="Common\DatePickDialogUtil.cs" />
+    <Compile Include="Param\UpdateMyInfoParam.cs" />
+    <Compile Include="Param\UpdatePersonInfoParam.cs" />
+    <Compile Include="Json\UpdateMyInfoJson.cs" />
+    <Compile Include="Json\UpdatePersonInfoJson.cs" />
+    <Compile Include="SendSecurityCodeActivity.cs" />
+    <Compile Include="Param\SendCodeParam.cs" />
+    <Compile Include="Param\SmsInfoParam.cs" />
+    <Compile Include="Json\SendCodeJson.cs" />
+    <Compile Include="Json\SetPasswordJson.cs" />
+    <Compile Include="Json\SmsJson.cs" />
+    <Compile Include="SetPasswordActivity.cs" />
+    <Compile Include="Param\ModiyPasswordParam.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="Common\JPushUtil.cs" />
+    <Compile Include="RegisterStepOneActivity.cs" />
+    <Compile Include="RegisterStepTwoResultActivity.cs" />
+    <Compile Include="Param\LoginInfoParam.cs" />
+    <Compile Include="Param\RegisterInfoParam.cs" />
+    <Compile Include="ServiceAgreeActivity.cs" />
+    <Compile Include="Common\ConfirmphonePopWindow.cs" />
+    <Compile Include="Json\LoginJson.cs" />
+    <Compile Include="Json\RegisterJson.cs" />
+    <Compile Include="Receiver\CustomJPushReceiver.cs" />
+    <Compile Include="Activitys\Alarm\AlarmDetailInfoActivity.cs" />
+    <Compile Include="Activitys\Alarm\AlarmLocationActivity.cs" />
+    <Compile Include="Param\AlarmInfoDetailParam.cs" />
+    <Compile Include="Model\Alarm\AlarmInfoDetailItem.cs" />
+    <Compile Include="Model\Alarm\AlarmInfoHandDetailItem.cs" />
+    <Compile Include="Model\Alarm\AlarmInfoListItem.cs" />
+    <Compile Include="Model\Alarm\AllMyUserListItem.cs" />
+    <Compile Include="Json\SearchAlarmDeatilInfoJson.cs" />
+    <Compile Include="Adapter\AlarmHandleDetailInfoAdapter.cs" />
+    <Compile Include="SettingActivity.cs" />
+    <Compile Include="Common\DeleteCleanCacheManager.cs" />
+    <Compile Include="Common\UpdateManager.cs" />
+    <Compile Include="Param\GetAppVersionParam.cs" />
+    <Compile Include="AboutUsActivity.cs" />
+    <Compile Include="Json\GetAppVersionJson.cs" />
+    <Compile Include="Activitys\My\CertificateActivity.cs" />
+    <Compile Include="Common\ServerTargetActivityFactory.cs" />
+    <Compile Include="Activitys\ServerType\Admin\AdminMainActivity.cs" />
+    <Compile Include="Activitys\ServerType\Errand\ErrandMainActivity.cs" />
+    <Compile Include="Activitys\ServerType\HouseKeep\HouseKeepMainActivity.cs" />
+    <Compile Include="Activitys\ServerType\Nurse\NurseMainActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\arrow_right_blue.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\arrow_right_gray.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\circle_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\circle_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\guider1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\guider2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\guider3.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\guider4.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\headImagedefault.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\home_tab_personal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\home_tab_personal_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_applyGuardian.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_back.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_bindingGuardian.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_more.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_basicInformation.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launch.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_eye_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_eye_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_password.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_rememberPassword_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_rememberPassword_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_username.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_map.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_medicalHistory.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_alarm_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_alarm_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_guardian_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_guardian_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_health_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_health_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_mine_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_mine_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_aboutUs.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_accountSecurity.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_advice.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_cacheRemover.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_call.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_message.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_personalData.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_phone.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_userName.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfomation_versionDetection.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfo_advision_jianyi.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfo_advision_qita.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfo_advision_tousu.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_myInfo_advision_zixun.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_combox_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_combox_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_eye_normal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_eye_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_message.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_password.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_phone.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_register_username.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_sex_man.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_sex_woman.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\login_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_bg.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\myInfomation_bgImage.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\myInfomation_headImage.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\myInfomation_next_arrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\myInfomation_setup_aboutus_logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\radiobutton_noneSelected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\radiobutton_selected.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\setting.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\uparrow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_camera.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_default.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_fav.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_integral.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_service.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_share.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_support.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\user_center_vip.png" />
+    <AndroidResource Include="Resources\layout\Guider.axml" />
+    <AndroidResource Include="Resources\drawable\shape.xml" />
+    <AndroidResource Include="Resources\layout\Guider1.axml" />
+    <AndroidResource Include="Resources\layout\Guider2.axml" />
+    <AndroidResource Include="Resources\layout\Guider3.axml" />
+    <AndroidResource Include="Resources\layout\Guider4.axml" />
+    <AndroidResource Include="Resources\drawable\btn_bluegray_selector.xml" />
+    <AndroidResource Include="Resources\anim\fade_in.xml" />
+    <AndroidResource Include="Resources\anim\fade_out.xml" />
+    <AndroidResource Include="Resources\layout\customprogressdialog.axml" />
+    <AndroidResource Include="Resources\anim\loading_round.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_3.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_4.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_5.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_6.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_7.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_8.png" />
+    <AndroidResource Include="Resources\layout\bottom_bar.axml" />
+    <AndroidResource Include="Resources\layout\Main_Tab_My.axml" />
+    <AndroidResource Include="Resources\drawable\setting_selector.xml" />
+    <AndroidResource Include="Resources\drawable\guiderdot_selector.xml" />
+    <AndroidResource Include="Resources\drawable\callcustomphone_selector.xml" />
+    <AndroidResource Include="Resources\drawable\relativeLayout_selector.xml" />
+    <AndroidResource Include="Resources\drawable\bg_gv_selector.xml" />
+    <AndroidResource Include="Resources\layout\ServerGridItemView.axml" />
+    <AndroidResource Include="Resources\layout\Main_Tab_Server.axml" />
+    <AndroidResource Include="Resources\drawable\btn_whitegray_selector.xml" />
+    <AndroidResource Include="Resources\layout\headImgSelectorPop.axml" />
+    <AndroidResource Include="Resources\anim\bottom_in.xml" />
+    <AndroidResource Include="Resources\anim\bottom_out.xml" />
+    <AndroidResource Include="Resources\layout\Main_Tab_Finance.axml" />
+    <AndroidResource Include="Resources\layout\custom_title_bar.axml" />
+    <AndroidResource Include="Resources\drawable\backselector.xml" />
+    <AndroidResource Include="Resources\layout\AdviceLayout.axml" />
+    <AndroidResource Include="Resources\layout\AdviceRecordListItemView.axml" />
+    <AndroidResource Include="Resources\layout\AccountSecurityLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoBirthLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoEmailLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoFixedPhoneLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoGenderLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoIdCardNoLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoIdCardNoLocationLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoTrueLocationLayout.axml" />
+    <AndroidResource Include="Resources\layout\PersonInfoTrueNameLayout.axml" />
+    <AndroidResource Include="Resources\drawable\edit_focused.xml" />
+    <AndroidResource Include="Resources\drawable\edit_selector.xml" />
+    <AndroidResource Include="Resources\drawable\edit_nomal.xml" />
+    <AndroidResource Include="Resources\layout\commondatepickerlayout.axml" />
+    <AndroidResource Include="Resources\drawable\radiobutton_selector.xml" />
+    <AndroidResource Include="Resources\layout\SendSecurityCodeLayout.axml" />
+    <AndroidResource Include="Resources\drawable\btn_orangegray_selector.xml" />
+    <AndroidResource Include="Resources\layout\SetPasswordLayout.axml" />
+    <AndroidResource Include="Resources\layout\RecordAdviceLayout.axml" />
+    <AndroidResource Include="Resources\layout\WriteAdviceLayout.axml" />
+    <AndroidResource Include="Resources\drawable\textselector.xml" />
+    <AndroidResource Include="Resources\drawable\checkboxselector.xml" />
+    <AndroidResource Include="Resources\layout\RegisterStepOneLayout.axml" />
+    <AndroidResource Include="Resources\layout\RegisterStepTwoLayout.axml" />
+    <AndroidResource Include="Resources\drawable\registerAgreeTextSelector.xml" />
+    <AndroidResource Include="Resources\drawable\regitercheckboxselector.xml" />
+    <AndroidResource Include="Resources\layout\customer_notitfication_layout.axml" />
+    <AndroidResource Include="Resources\layout\ServiceAgreeLayout.axml" />
+    <AndroidResource Include="Resources\layout\customconfirmphonedialog.axml" />
+    <AndroidResource Include="Resources\layout\AlarmDetailInfoLayout.axml" />
+    <AndroidResource Include="Resources\layout\AlarmLocationLayout.axml" />
+    <AndroidResource Include="Resources\layout\AlarmHandleDetailInfoListitemView.axml" />
+    <AndroidResource Include="Resources\layout\Setting.axml" />
+    <AndroidResource Include="Resources\drawable\btn_redgray_selector.xml" />
+    <AndroidResource Include="Resources\layout\progressbar.axml" />
+    <AndroidResource Include="Resources\layout\AboutUsLayout.axml" />
+    <AndroidResource Include="Resources\layout\CertificateLayout.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Model\" />
+    <Folder Include="Common\" />
+    <Folder Include="Adapter\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="Fragements\" />
+    <Folder Include="Fragements\MainTab\" />
+    <Folder Include="Activitys\" />
+    <Folder Include="Param\" />
+    <Folder Include="Json\" />
+    <Folder Include="Activitys\My\" />
+    <Folder Include="Fragements\Advice\" />
+    <Folder Include="Activitys\ServerType\" />
+    <Folder Include="Activitys\ServerType\Admin\" />
+    <Folder Include="Activitys\ServerType\Nurse\" />
+    <Folder Include="Activitys\ServerType\HouseKeep\" />
+    <Folder Include="Activitys\ServerType\Errand\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JPushBindingLibrary\JPushBindingLibrary.csproj">
+      <Project>{8D5FA6D9-2523-46EE-A875-4DFCF226A38C}</Project>
+      <Name>JPushBindingLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaiduMapApiBindingLibrary\BaiduMapApiBindingLibrary.csproj">
+      <Project>{8B61FFD4-2993-44F4-A480-3171928FBB34}</Project>
+      <Name>BaiduMapApiBindingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

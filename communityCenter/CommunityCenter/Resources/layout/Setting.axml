@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--关于我们 -->
+            <RelativeLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_aboutUs"
+                android:background="@drawable/relativeLayout_selector"
+                android:layout_marginTop="16dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_myInfomation_aboutUs"
+                    android:layout_marginLeft="13dp"
+                    android:id="@+id/img_aboutUs" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于我们"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_aboutUs"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/darkgray" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/myInfomation_next_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_basic_arraw" />
+            </RelativeLayout>
+        <!--版本检测 -->
+            <RelativeLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_versionCheck"
+                android:background="@drawable/relativeLayout_selector"
+                android:layout_marginTop="1dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_myInfomation_versionDetection"
+                    android:layout_marginLeft="13dp"
+                    android:id="@+id/img_versionCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="版本检测"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_versionCheck"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/darkgray" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/myInfomation_next_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_versionCheck_arraw" />
+            </RelativeLayout>
+        <!--清除缓存 -->
+            <RelativeLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_cacheRemover"
+                android:background="@drawable/relativeLayout_selector"
+                android:layout_marginTop="15dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_myInfomation_cacheRemover"
+                    android:layout_marginLeft="13dp"
+                    android:id="@+id/img_cacheRemover" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清除缓存"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/img_cacheRemover"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/darkgray" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/myInfomation_next_arrow"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_cacheRemover_arraw" />
+                <TextView
+                    android:id="@+id/tv_CacheSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50MB"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_cacheRemover_arraw"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/lightgray" />
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:text="退出当前账号"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_redgray_selector"
+                android:id="@+id/btn_Exit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
