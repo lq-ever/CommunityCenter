@@ -226,6 +226,10 @@ CommunityCenter.Activitys.Nurse.NurseMainActivity, CommunityCenter;md588d13188b8
 CommunityCenter.Activitys.Nurse.NurseMainActivity, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity
 CommunityCenter.Activitys.Nurse.NurseMainActivity;md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity
 communitycenter.activitys.nurse.NurseMainActivity;md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity
+CommunityCenter.Common.MyScrollView, CommunityCenter;md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView
+CommunityCenter.Common.MyScrollView, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView
+CommunityCenter.Common.MyScrollView;md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView
+communitycenter.common.MyScrollView;md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView
 Com.Baidu.Mapapi.Cloud.ICloudListenerImplementor, BaiduMapApiBindingLibrary;mono.com.baidu.mapapi.cloud.CloudListenerImplementor
 Com.Baidu.Mapapi.Cloud.ICloudListenerImplementor, BaiduMapApiBindingLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.baidu.mapapi.cloud.CloudListenerImplementor
 Com.Baidu.Mapapi.Cloud.ICloudListenerImplementor;mono.com.baidu.mapapi.cloud.CloudListenerImplementor

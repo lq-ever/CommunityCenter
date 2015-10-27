@@ -153,6 +153,7 @@
     <Compile Include="Activitys\ServerType\Errand\ErrandMainActivity.cs" />
     <Compile Include="Activitys\ServerType\HouseKeep\HouseKeepMainActivity.cs" />
     <Compile Include="Activitys\ServerType\Nurse\NurseMainActivity.cs" />
+    <Compile Include="Common\MyScrollView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
