@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <EditText
+            android:id="@+id/edit_locationthreelevel"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_selector"
+            android:hint="省市区"
+            android:textColor="@color/ingray"
+            android:textColorHint="@color/ingray"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp" />
+        <EditText
+            android:id="@+id/edit_locationdeatil"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="输入详细地址"
+            android:textColor="@color/ingray"
+            android:textColorHint="@color/ingray"
+            android:textSize="14sp"
+            android:background="@drawable/edit_selector"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="保存"
+        android:gravity="center"
+        android:background="@drawable/btn_bluegray_selector"
+        android:textColor="@color/white" />
+</LinearLayout>

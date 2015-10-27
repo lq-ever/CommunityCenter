@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_tab_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/menu_bg">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_tab_bottom_server"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/ic_menu_health_selected" />
+            <TextView
+                android:id="@+id/tv_tab_bottom_server"
+                style="@style/bottom_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_tab_bottom_finance"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_finance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/ic_menu_alarm_normal" />
+            <TextView
+                android:id="@+id/tv_tab_bottom_finance"
+                style="@style/bottom_tab_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="财富" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_tab_bottom_my"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/btn_tab_bottom_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0000"
+                android:clickable="false"
+                android:src="@drawable/ic_menu_mine_normal" />
+            <TextView
+                android:id="@+id/tv_tab_bottom_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                style="@style/bottom_tab_tv" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

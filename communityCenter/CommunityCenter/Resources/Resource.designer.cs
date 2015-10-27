@@ -735,9 +735,6 @@ namespace CommunityCenter
 			// aapt resource value: 0x7f070047
 			public const int btn_confirm = 2131165255;
 			
-			// aapt resource value: 0x7f070044
-			public const int btn_header_back = 2131165252;
-			
 			// aapt resource value: 0x7f070054
 			public const int btn_pic_cancel = 2131165268;
 			
@@ -926,6 +923,9 @@ namespace CommunityCenter
 			
 			// aapt resource value: 0x7f070060
 			public const int img_head = 2131165280;
+			
+			// aapt resource value: 0x7f070044
+			public const int img_header_back = 2131165252;
 			
 			// aapt resource value: 0x7f07001a
 			public const int img_identity_arraw = 2131165210;

@@ -2,13 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CommunityCenter\SplashActivity.cs" Line="75" Column="22" />
-      <File FileName="CommunityCenter\LoginActivity.cs" Line="197" Column="5" />
-      <File FileName="CommunityCenter\Common\ServerTargetActivityFactory.cs" Line="12" Column="3" />
-      <File FileName="CommunityCenter\Fragements\MainTab\MainTabMyFragment.cs" Line="175" Column="16" />
-      <File FileName="CommunityCenter\Resources\values\styles.xml" Line="78" Column="7" />
-      <File FileName="CommunityCenter\Resources\drawable\setting_selector.xml" Line="8" Column="105" />
-      <File FileName="CommunityCenter\Resources\drawable\backselector.xml" Line="10" Column="53" />
+      <File FileName="CommunityCenter\Resources\values\styles.xml" Line="36" Column="18" />
+      <File FileName="CommunityCenter\Common\Global.cs" Line="1" Column="1" />
+      <File FileName="CommunityCenter\Common\EldYoungUtil.cs" Line="43" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

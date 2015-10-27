@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        style="@style/personbasic_ll_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <EditText
+            style="@style/personbasic_value"
+            android:id="@+id/edit_IdCardNo"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:hint="请输入身份证号"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_selector" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="保存"
+        android:gravity="center"
+        android:background="@drawable/btn_bluegray_selector"
+        android:textColor="@color/white" />
+</LinearLayout>

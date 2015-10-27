@@ -2,3 +2,7 @@ E:\GitHub\CommunityCenter\BaiduMapApiBindingLibrary\bin\Debug\BaiduMapApiBinding
 E:\GitHub\CommunityCenter\BaiduMapApiBindingLibrary\bin\Debug\BaiduMapApiBindingLibrary.pdb
 E:\GitHub\CommunityCenter\BaiduMapApiBindingLibrary\obj\Debug\BaiduMapApiBindingLibrary.dll
 E:\GitHub\CommunityCenter\BaiduMapApiBindingLibrary\obj\Debug\BaiduMapApiBindingLibrary.pdb
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\bin\Debug\BaiduMapApiBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\bin\Debug\BaiduMapApiBindingLibrary.pdb
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\obj\Debug\BaiduMapApiBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\obj\Debug\BaiduMapApiBindingLibrary.pdb

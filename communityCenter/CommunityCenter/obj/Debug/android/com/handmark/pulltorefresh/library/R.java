@@ -507,7 +507,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int btn_Submit=0x7f0700bf;
         public static final int btn_cancel=0x7f070048;
         public static final int btn_confirm=0x7f070047;
-        public static final int btn_header_back=0x7f070044;
         public static final int btn_pic_cancel=0x7f070054;
         public static final int btn_pick_photo=0x7f070053;
         public static final int btn_skip=0x7f070050;
@@ -571,6 +570,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int img_fixedPhone_arraw=0x7f070090;
         public static final int img_gender_arraw=0x7f070088;
         public static final int img_head=0x7f070060;
+        public static final int img_header_back=0x7f070044;
         public static final int img_identity_arraw=0x7f07001a;
         public static final int img_loginPwd_arraw=0x7f07000e;
         public static final int img_payPwd_arraw=0x7f070012;
