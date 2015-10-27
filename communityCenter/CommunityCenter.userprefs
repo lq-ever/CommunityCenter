@@ -2,9 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CommunityCenter\Resources\values\styles.xml" Line="36" Column="18" />
-      <File FileName="CommunityCenter\Common\Global.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Common\EldYoungUtil.cs" Line="43" Column="57" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminMainActivity.cs" Line="49" Column="28" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AlarmRecordsActivity.cs" Line="14" Column="53" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\HealthRecordsActivity.cs" Line="19" Column="15" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\BindGuardianActivity.cs" Line="24" Column="4" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\GuardianApplyActivity.cs" Line="54" Column="80" />
+      <File FileName="CommunityCenter\Common\CustomGridView.cs" Line="32" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
