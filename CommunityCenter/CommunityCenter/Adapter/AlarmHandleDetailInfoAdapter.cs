@@ -3,7 +3,8 @@ using Android.Widget;
 using Android.App;
 using System.Collections.Generic;
 using Android.Views;
-using CommunityCenter.Model.Alarm;
+using CommunityCenter.Model.ServerType.Admin;
+
 
 namespace CommunityCenter.Adapter
 {

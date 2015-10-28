@@ -8,7 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Android.Support.V4.App;
 using CommunityCenter.Fragments.MainTab;
-using CommunityCenter.Activitys.Alarm;
+using CommunityCenter.Activitys.ServerType.Admin;
+
 
 namespace CommunityCenter
 {

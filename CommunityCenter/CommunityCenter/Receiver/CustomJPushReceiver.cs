@@ -7,7 +7,8 @@ using Java.Util.Logging;
 using CN.Jpush.Android.Api;
 using System.Text;
 using CommunityCenter.Common;
-using CommunityCenter.Activitys.Alarm;
+using CommunityCenter.Activitys.ServerType.Admin;
+
 
 
 
