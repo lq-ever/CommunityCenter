@@ -13,14 +13,21 @@ using Android.Widget;
 
 namespace CommunityCenter.Activitys.ServerType.Admin
 {
-	[Activity (Label = "HealthRecordsActivity")]			
+	[Activity (Theme="@style/MyCustomTheme")]			
 	public class HealthRecordsActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
+			RequestWindowFeature (WindowFeatures.CustomTitle);
 			// Create your application here
+			SetContentView(Resource.Layout.BindGuardianLayout);
+			Window.SetFeatureInt (WindowFeatures.CustomTitle, Resource.Layout.custom_title_bar);
+			InitView ();
+		}
+		private void InitView()
+		{
+			
 		}
 	}
 }
