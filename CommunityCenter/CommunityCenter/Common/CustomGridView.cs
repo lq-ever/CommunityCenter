@@ -2,8 +2,9 @@
 
 using Android.Content;
 using Android.Util;
-using Android.Runtime;
+
 using Android.Widget;
+using Android.Runtime;
 
 namespace CommunityCenter.Common
 {
@@ -31,9 +32,7 @@ namespace CommunityCenter.Common
 			int expandSpec = MeasureSpec.MakeMeasureSpec(int.MaxValue >> 2,Android.Views.MeasureSpecMode.AtMost);
 			base.OnMeasure (widthMeasureSpec, expandSpec);
 		}
-
-
-
+			
 		protected override void OnDraw (Android.Graphics.Canvas canvas)
 		{
 			base.OnDraw (canvas);
