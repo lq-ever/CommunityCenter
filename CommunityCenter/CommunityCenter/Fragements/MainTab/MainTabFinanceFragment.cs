@@ -12,11 +12,15 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V4.App;
+using Android.Support.V4.Widget;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace CommunityCenter
 {
-	public class MainTabFinanceFragment : Fragment
+	public class MainTabFinanceFragment : Fragment,SwipeRefreshLayout.IOnRefreshListener
 	{
+		private SwipeRefreshLayout swipeRefreshLayout;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -37,7 +41,19 @@ namespace CommunityCenter
 		public override void OnActivityCreated (Bundle savedInstanceState)
 		{
 			base.OnActivityCreated (savedInstanceState);
+			swipeRefreshLayout = View.FindViewById<SwipeRefreshLayout>(Resource.Id.swipe_container);
+			swipeRefreshLayout.SetColorSchemeResources (Android.Resource.Color.HoloBlueLight, Android.Resource.Color.HoloRedLight, Android.Resource.Color.HoloOrangeLight, Android.Resource.Color.HoloGreenLight);
+			swipeRefreshLayout.SetOnRefreshListener (this);
+			swipeRefreshLayout.Refreshing = true;
 		}
+		public void OnRefresh ()
+		{
+			Task.Factory.StartNew (() => {
+				Thread.Sleep(3000);
+				swipeRefreshLayout.Refreshing = false;
+			});
+		}
+
 	}
 }
 
