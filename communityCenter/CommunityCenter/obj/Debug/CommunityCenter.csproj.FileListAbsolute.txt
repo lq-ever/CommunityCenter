@@ -371,3 +371,10 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\g
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable\unbindselector.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\bindguardianlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\healthrecordslayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\alarmrecordslayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\guardianlistitemview.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable\tv_guardiandetailselector.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\customunbinddialoglayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\guardiandetailinfolayout.xml

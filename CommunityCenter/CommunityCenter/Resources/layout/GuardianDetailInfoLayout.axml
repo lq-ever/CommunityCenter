@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_basicInformation"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="基本信息"
+            android:textColor="@color/blue"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+            <TextView
+                android:id="@+id/tv_TrueName"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="性别" />
+            <TextView
+                android:id="@+id/tv_Gender"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="年龄" />
+            <TextView
+                android:id="@+id/tv_Brnl"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="手机号" />
+            <TextView
+                android:id="@+id/tv_PhoneNumberOne"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="身份证号" />
+            <TextView
+                android:id="@+id/tv_IDNumber"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="居住地址" />
+            <TextView
+                android:id="@+id/tv_ContactAddress"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="固定电话" />
+            <TextView
+                android:id="@+id/tv_TelePhoneNumber"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="邮箱" />
+            <TextView
+                android:id="@+id/tv_Email"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_basicInformation"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="健康信息及病史"
+            android:textColor="@color/blue"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="身高" />
+            <TextView
+                android:id="@+id/tv_Height"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="体重" />
+            <TextView
+                android:id="@+id/tv_Weight"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                style="@style/tv_key"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="疾病史" />
+            <TextView
+                android:id="@+id/tv_HereditaryDisease"
+                style="@style/tv_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

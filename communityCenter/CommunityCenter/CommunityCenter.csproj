@@ -165,6 +165,17 @@
     <Compile Include="Activitys\ServerType\Admin\AlarmRecordsActivity.cs" />
     <Compile Include="Activitys\ServerType\Admin\HealthRecordsActivity.cs" />
     <Compile Include="Activitys\ServerType\Admin\AdminSetActivity.cs" />
+    <Compile Include="Model\ServerType\Admin\GuardianInfoListItem.cs" />
+    <Compile Include="Adapter\GuardianInfoAdapter.cs" />
+    <Compile Include="Param\UnBindGuardianParam.cs" />
+    <Compile Include="Common\UnbindPopWindow.cs" />
+    <Compile Include="Json\UnBindGuardianJson.cs" />
+    <Compile Include="Activitys\ServerType\Admin\GuardianDetailInfoActivity.cs" />
+    <Compile Include="Param\GuardianDetailInfoParam.cs" />
+    <Compile Include="Json\GuardianDetailInfoJson.cs" />
+    <Compile Include="Model\ServerType\Admin\GuardianDetailInfoItem.cs" />
+    <Compile Include="Param\MineGuardianInfoListParam.cs" />
+    <Compile Include="Json\GuardianInfoJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -342,6 +353,13 @@
     <AndroidResource Include="Resources\layout\GuardianApplyLayout.axml" />
     <AndroidResource Include="Resources\layout\getApplyInfoListItemView.axml" />
     <AndroidResource Include="Resources\drawable\unbindselector.xml" />
+    <AndroidResource Include="Resources\layout\BindGuardianLayout.axml" />
+    <AndroidResource Include="Resources\layout\HealthRecordsLayout.axml" />
+    <AndroidResource Include="Resources\layout\AlarmRecordsLayout.axml" />
+    <AndroidResource Include="Resources\layout\guardianListitemView.axml" />
+    <AndroidResource Include="Resources\drawable\tv_guardiandetailselector.xml" />
+    <AndroidResource Include="Resources\layout\customunbinddialogLayout.axml" />
+    <AndroidResource Include="Resources\layout\GuardianDetailInfoLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

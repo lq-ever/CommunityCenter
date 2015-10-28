@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="解绑"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_title" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@color/blue"
+        android:layout_height="2dp" />
+    <TextView
+        android:id="@+id/tv_msgContent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="您确定要解绑吗？"
+        android:textColor="@color/darkgray"
+        android:gravity="center"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="确定"
+            android:background="@color/blue"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="取消"
+            android:background="@color/ingray"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
