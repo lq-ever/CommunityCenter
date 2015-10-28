@@ -76,7 +76,7 @@ namespace CommunityCenter.Activitys.My
 
 
 			var updateMyInfoParam = new UpdateMyInfoParam () {
-				Uid = Global.MyInfo.UId,ParamType = "IDAddress",ParamValue = idCardLocation
+				Uid = Global.Guid,ParamType = "IDAddress",ParamValue = idCardLocation
 			};
 			if (!requestParams.ContainsKey ("key"))
 				requestParams.Add ("key", updateMyInfoParam.Key);

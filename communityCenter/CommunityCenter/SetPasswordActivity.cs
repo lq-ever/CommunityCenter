@@ -151,7 +151,7 @@ namespace CommunityCenter
 			if (sendType == "FindPwd")
 				modipwdParam.UId = phoneNumber;
 			else
-				modipwdParam.UId = Global.MyInfo.UId;
+				modipwdParam.UId = Global.Guid;
 
 			//初始化参数
 			SetRestRequestParams (modipwdParam);
