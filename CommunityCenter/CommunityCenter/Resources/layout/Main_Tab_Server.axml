@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <ScrollView
+<!--    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
@@ -39,5 +39,31 @@
                 android:stretchMode="columnWidth"
                 android:gravity="center" />
         </LinearLayout>
-    </ScrollView>
+    </ScrollView>-->
+    <communitycenter.common.MyScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myinfomation_bgimage" />
+            <communitycenter.common.CustomGridView
+                android:id="@+id/gv_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:scrollbars="none"
+                android:listSelector="@null" />
+        </LinearLayout>
+    </communitycenter.common.MyScrollView>
 </LinearLayout>
