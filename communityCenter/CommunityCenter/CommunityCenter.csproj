@@ -132,13 +132,7 @@
     <Compile Include="Json\LoginJson.cs" />
     <Compile Include="Json\RegisterJson.cs" />
     <Compile Include="Receiver\CustomJPushReceiver.cs" />
-    <Compile Include="Activitys\Alarm\AlarmDetailInfoActivity.cs" />
-    <Compile Include="Activitys\Alarm\AlarmLocationActivity.cs" />
     <Compile Include="Param\AlarmInfoDetailParam.cs" />
-    <Compile Include="Model\Alarm\AlarmInfoDetailItem.cs" />
-    <Compile Include="Model\Alarm\AlarmInfoHandDetailItem.cs" />
-    <Compile Include="Model\Alarm\AlarmInfoListItem.cs" />
-    <Compile Include="Model\Alarm\AllMyUserListItem.cs" />
     <Compile Include="Json\SearchAlarmDeatilInfoJson.cs" />
     <Compile Include="Adapter\AlarmHandleDetailInfoAdapter.cs" />
     <Compile Include="SettingActivity.cs" />
@@ -176,6 +170,17 @@
     <Compile Include="Model\ServerType\Admin\GuardianDetailInfoItem.cs" />
     <Compile Include="Param\MineGuardianInfoListParam.cs" />
     <Compile Include="Json\GuardianInfoJson.cs" />
+    <Compile Include="Adapter\AlarmInfoListAdapter.cs" />
+    <Compile Include="Model\ServerType\Admin\AlarmInfoDetailItem.cs" />
+    <Compile Include="Model\ServerType\Admin\AlarmInfoHandDetailItem.cs" />
+    <Compile Include="Model\ServerType\Admin\AlarmInfoListItem.cs" />
+    <Compile Include="Model\ServerType\Admin\AllMyUserListItem.cs" />
+    <Compile Include="Activitys\ServerType\Admin\AlarmDetailInfoActivity.cs" />
+    <Compile Include="Activitys\ServerType\Admin\AlarmLocationActivity.cs" />
+    <Compile Include="Param\AlarmInfoListParam.cs" />
+    <Compile Include="Param\SearchAllMyUserParam.cs" />
+    <Compile Include="Json\SearchAllMyUserJson.cs" />
+    <Compile Include="Json\SearchAlarmInfoJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -360,6 +365,7 @@
     <AndroidResource Include="Resources\drawable\tv_guardiandetailselector.xml" />
     <AndroidResource Include="Resources\layout\customunbinddialogLayout.axml" />
     <AndroidResource Include="Resources\layout\GuardianDetailInfoLayout.axml" />
+    <AndroidResource Include="Resources\layout\alarmListitemView.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

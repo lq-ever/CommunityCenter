@@ -88,7 +88,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			actualListView.Adapter = guardianInfoAdapter;
 
 			//初始化请求参数对象
-			myGuardianInfoListParam = new MineGuardianInfoListParam (){ UserId = Global.MyInfo.UId };
+			myGuardianInfoListParam = new MineGuardianInfoListParam (){ UserId = Global.Guid};
 
 			LasyloadData ();
 

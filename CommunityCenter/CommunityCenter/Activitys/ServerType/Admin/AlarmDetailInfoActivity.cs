@@ -19,12 +19,13 @@ using Newtonsoft.Json;
 using CommunityCenter.Common;
 using Org.Json;
 using CommunityCenter.Param;
-using CommunityCenter.Model.Alarm;
+
 using RestSharp;
 using CommunityCenter.Json;
 using CommunityCenter.Adapter;
+using CommunityCenter.Model.ServerType.Admin;
 
-namespace CommunityCenter.Activitys.Alarm
+namespace CommunityCenter.Activitys.ServerType.Admin
 {
 	[Activity (Theme="@style/MyCustomTheme")]			
 	public class AlarmDetailInfoActivity : Activity

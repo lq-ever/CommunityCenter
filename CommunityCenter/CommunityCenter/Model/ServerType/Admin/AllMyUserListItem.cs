@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CommunityCenter.Model.Alarm
+namespace CommunityCenter.Model.ServerType.Admin
 {
 	public class AllMyUserListItem
 	{

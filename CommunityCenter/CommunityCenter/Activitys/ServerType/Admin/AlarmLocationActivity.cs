@@ -17,7 +17,7 @@ using Com.Baidu.Mapapi.Model;
 using Com.Baidu.Mapapi.Utils;
 
 
-namespace CommunityCenter.Activitys.Alarm
+namespace CommunityCenter.Activitys.ServerType.Admin
 {
 	[Activity (Theme="@style/MyCustomTheme")]			
 	public class AlarmLocationActivity : Activity

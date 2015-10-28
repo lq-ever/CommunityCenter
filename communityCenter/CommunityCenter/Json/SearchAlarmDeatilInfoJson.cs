@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using CommunityCenter.Model.Alarm;
+using CommunityCenter.Model.ServerType.Admin;
+
 
 
 namespace CommunityCenter.Json
