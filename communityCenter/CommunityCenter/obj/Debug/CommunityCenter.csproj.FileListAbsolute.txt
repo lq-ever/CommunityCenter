@@ -362,8 +362,6 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\progressbar.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\aboutuslayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\certificatelayout.xml
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\adminmainlayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\errandmainlayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\housekeepmainlayout.xml
@@ -371,3 +369,5 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\n
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\guardianapplylayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\getapplyinfolistitemview.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable\unbindselector.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt

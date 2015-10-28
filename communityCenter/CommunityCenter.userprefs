@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj">
+﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
   <MonoDevelop.Ide.Workbench>
     <Files>
