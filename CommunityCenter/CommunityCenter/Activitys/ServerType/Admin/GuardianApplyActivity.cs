@@ -57,8 +57,8 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
+			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "绑定申请";
 
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "监护人申请处理";
 			guardianApplyRefreshListView = FindViewById<PullToRefreshListView> (Resource.Id.lv_guardianApply);
 			actualListView = (ListView)guardianApplyRefreshListView.RefreshableView;
 

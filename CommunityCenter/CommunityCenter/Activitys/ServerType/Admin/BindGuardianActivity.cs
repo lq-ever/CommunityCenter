@@ -52,12 +52,14 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		private void InitView()
 		{
 			//设置标题栏
+			//设置标题栏
 			var img_header_back = FindViewById<ImageView> (Resource.Id.img_header_back);
 			img_header_back.Click += (sender, e) => 
 			{
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
+			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "绑定会员";
 
 			myGuardianRefreshListView = FindViewById<PullToRefreshListView> (Resource.Id.lv_myGuardian);
 			actualListView = (ListView)myGuardianRefreshListView.RefreshableView;

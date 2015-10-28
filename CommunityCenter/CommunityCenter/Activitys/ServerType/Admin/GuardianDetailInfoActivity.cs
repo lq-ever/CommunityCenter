@@ -50,7 +50,8 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "详情";
+			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "会员详情";
+
 			tv_TrueName = FindViewById<TextView> (Resource.Id.tv_TrueName);
 			tv_Gender = FindViewById<TextView> (Resource.Id.tv_Gender);
 			tv_Brnl = FindViewById<TextView> (Resource.Id.tv_Brnl);

@@ -181,6 +181,12 @@
     <Compile Include="Param\SearchAllMyUserParam.cs" />
     <Compile Include="Json\SearchAllMyUserJson.cs" />
     <Compile Include="Json\SearchAlarmInfoJson.cs" />
+    <Compile Include="Adapter\HealthInfoListAdapter.cs" />
+    <Compile Include="Model\ServerType\Admin\HealthInfoItem.cs" />
+    <Compile Include="Model\ServerType\Admin\HealthStand.cs" />
+    <Compile Include="Param\SearchHealthInforParam.cs" />
+    <Compile Include="Activitys\ServerType\Admin\PhysicalDetailInfoActivity.cs" />
+    <Compile Include="Json\SearchHealthInfoJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -366,6 +372,8 @@
     <AndroidResource Include="Resources\layout\customunbinddialogLayout.axml" />
     <AndroidResource Include="Resources\layout\GuardianDetailInfoLayout.axml" />
     <AndroidResource Include="Resources\layout\alarmListitemView.axml" />
+    <AndroidResource Include="Resources\layout\healthListItemView.axml" />
+    <AndroidResource Include="Resources\layout\PhysicalDetailInfoLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

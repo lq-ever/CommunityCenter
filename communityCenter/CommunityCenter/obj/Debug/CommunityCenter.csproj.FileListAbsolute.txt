@@ -379,3 +379,5 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\customunbinddialoglayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\guardiandetailinfolayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\alarmlistitemview.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\healthlistitemview.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\physicaldetailinfolayout.xml
