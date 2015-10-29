@@ -82,7 +82,7 @@ namespace CommunityCenter.Fragments.MainTab
 			//点击注册登录
 			ll_login_register.Click += (object sender, EventArgs e) => 
 			{
-				EldYoungUtil.StartLoginActivity(Activity);
+				EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Main);
 			};
 
 			//设置操作
@@ -103,8 +103,7 @@ namespace CommunityCenter.Fragments.MainTab
 						picPopWindow = new SelectPicPopWindow(Activity,this);
 					picPopWindow.ShowPopWindow(View.FindViewById<LinearLayout>(Resource.Id.ll_person));
 				}
-				else
-					EldYoungUtil.StartLoginActivity(Activity);	
+
 			};
 
 			tv_nickName = View.FindViewById<TextView> (Resource.Id.tv_nickName);
@@ -120,7 +119,7 @@ namespace CommunityCenter.Fragments.MainTab
 					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 				}
 				else
-					EldYoungUtil.StartLoginActivity(Activity);
+					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.PersonInfo);
 				
 			};
 			//账户安全
@@ -133,7 +132,7 @@ namespace CommunityCenter.Fragments.MainTab
 				    Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 				}
 				else
-					EldYoungUtil.StartLoginActivity(Activity);
+					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.AccountSecurity);
 
 			};
 			//证书
@@ -146,7 +145,7 @@ namespace CommunityCenter.Fragments.MainTab
 					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 				}
 				else
-					EldYoungUtil.StartLoginActivity(Activity);
+					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Certificate);
 			};
 			//投诉建议
 			var rl_person_advice = View.FindViewById<RelativeLayout> (Resource.Id.rl_person_advice);
@@ -158,7 +157,7 @@ namespace CommunityCenter.Fragments.MainTab
 					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 				}
 				else
-					EldYoungUtil.StartLoginActivity(Activity);
+					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Advice);
 			};
 			//拨打电话
 			var tv_customPhone = View.FindViewById<TextView>(Resource.Id.tv_customPhone);

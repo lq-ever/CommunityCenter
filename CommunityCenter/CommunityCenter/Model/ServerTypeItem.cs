@@ -15,6 +15,10 @@ namespace CommunityCenter.Model
 			get;
 			set;
 		}
+		public FuncActivityType FuncType {
+			get;
+			set;
+		}
 	}
 }
 

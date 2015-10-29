@@ -119,6 +119,8 @@ namespace CommunityCenter.Common
 		}
 
 		#endregion
+
+		public const string FuncType="FuncType";
 	}
 }
 
