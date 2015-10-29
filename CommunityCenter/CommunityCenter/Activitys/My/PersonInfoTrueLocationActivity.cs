@@ -80,7 +80,7 @@ namespace CommunityCenter.Activitys.My
 
 
 			var updateMyInfoParam = new UpdateMyInfoParam () {
-				Uid = Global.MyInfo.UId,ParamType = "ContactAddress",ParamValue = contactAddress
+				Uid = Global.Guid,ParamType = "ContactAddress",ParamValue = contactAddress
 			};
 			if (!requestParams.ContainsKey ("key"))
 				requestParams.Add ("key", updateMyInfoParam.Key);

@@ -80,7 +80,7 @@ namespace CommunityCenter.Activitys.My
 
 			//调用restapi注册,将用户名、密码信息写
 			var updateMyInfoParam = new UpdateMyInfoParam () {
-				Uid = Global.MyInfo.UId,ParamType = "TrueName",ParamValue = edit_trueName.Text
+				Uid = Global.Guid,ParamType = "TrueName",ParamValue = edit_trueName.Text
 			};
 			if (!requestParams.ContainsKey ("key"))
 				requestParams.Add ("key", updateMyInfoParam.Key);
