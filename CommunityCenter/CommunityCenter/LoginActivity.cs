@@ -19,7 +19,7 @@ using CommunityCenter.Json;
 
 namespace CommunityCenter
 {
-	[Activity (Theme="@style/AppTheme")]			
+	[Activity (Theme="@style/MyCustomTheme")]			
 	public class LoginActivity : InstrumentedActivity
 	{
 
@@ -35,7 +35,25 @@ namespace CommunityCenter
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+			RequestWindowFeature (WindowFeatures.CustomTitle);
+			// Create your application here
 			SetContentView (Resource.Layout.Login);
+			Window.SetFeatureInt (WindowFeatures.CustomTitle, Resource.Layout.custom_title_bar);
+			InitView ();
+		
+		}
+
+		private void InitView()
+		{
+			//设置标题栏
+			var img_header_back = FindViewById<ImageView> (Resource.Id.img_header_back);
+			img_header_back.Click += (sender, e) => 
+			{
+				this.Finish();
+				OverridePendingTransition(Resource.Animation.bottom_out,0);
+			};
+			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "登录";
+
 			_jpushUtil = new JPushUtil (this);
 			// Create your application here
 			//或得共享实例变量
@@ -99,15 +117,14 @@ namespace CommunityCenter
 				else
 					sp_userinfo.Edit().PutBoolean(Global.refrence_Password_Check,false).Commit();
 			};
-            
+
 
 			//登录按钮事件
 			btn_login.Click += (sender, e) => 
 			{
-				
+
 				Login();
 			};
-				
 		}
 
 		private void Login()
