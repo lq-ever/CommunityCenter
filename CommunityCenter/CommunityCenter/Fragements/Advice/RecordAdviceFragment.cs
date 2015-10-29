@@ -109,7 +109,7 @@ namespace CommunityCenter.Fragments.Advice
 			actualListView.Adapter = adviceRecordListAdapter;
 			//初始化请求参数信息
 			adviceRecordInfoListParam = new AdviceRecordInfoListParam () {
-				UId = Global.MyInfo.UId,
+				UId = Global.Guid,
 				AdviceType = _adviceType
 			};
 			//初始化view完成

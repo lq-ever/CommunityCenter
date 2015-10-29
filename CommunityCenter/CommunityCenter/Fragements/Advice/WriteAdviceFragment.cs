@@ -118,7 +118,7 @@ namespace CommunityCenter.Fragments.Advice
 
 			//调用restapi注册,将用户名、密码信息写
 			var adviceWriteParam = new AdviceWriteParam () {
-				UId = Global.MyInfo.UId,AdviceType = _adviceType,AdviceTitle = adviceTitle,AdviceContent = adviceContent
+				UId = Global.Guid,AdviceType = _adviceType,AdviceTitle = adviceTitle,AdviceContent = adviceContent
 			};
 			if (!requestParams.ContainsKey ("key"))
 				requestParams.Add ("key", adviceWriteParam.Key);

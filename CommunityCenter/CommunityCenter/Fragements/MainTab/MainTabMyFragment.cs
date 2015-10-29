@@ -330,7 +330,7 @@ namespace CommunityCenter.Fragments.MainTab
 				var  headimgStr = Convert.ToBase64String(buffer);
 				//调用restapi提交头像
 				var headImgPostParam = new HeadImgPostParam () {
-					UId = Global.MyInfo.UId,ImageStr = headimgStr
+					UId = Global.Guid,ImageStr = headimgStr
 				};
 				SetRestRequestParams (headImgPostParam);
 				var restSharpRequestHelp = new RestSharpRequestHelp(headImgPostParam.Url,requestParams);
