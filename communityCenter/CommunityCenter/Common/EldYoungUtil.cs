@@ -34,13 +34,13 @@ namespace CommunityCenter.Common
 			}
 		}
 		/// <summary>
-		/// 启动登录活动activity.
+		/// 启动登录活动activity.并传入参数至下一步
 		/// </summary>
 		/// <param name="activity">Activity.</param>
 		public static void StartLoginActivity(Activity activity)
 		{
 			activity.StartActivity(typeof(LoginActivity));
-			activity.OverridePendingTransition(Resource.Animation.bottom_in,Resource.Animation.bottom_out);
+			activity.OverridePendingTransition(Resource.Animation.bottom_in,0);
 		}
 
 		/// <summary>

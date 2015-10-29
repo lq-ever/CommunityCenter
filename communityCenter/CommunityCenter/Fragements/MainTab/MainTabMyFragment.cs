@@ -44,6 +44,9 @@ namespace CommunityCenter.Fragments.MainTab
 		private  string IMAGE_UNSPECTFIED = "image/*"; 
 		private Dictionary<string,string> requestParams = new Dictionary<string,string> ();
 
+		//获取我的信息请求参数
+		private Dictionary<string,string> requestMyInfoParams = new Dictionary<string,string> ();
+
 		
 		public override void OnCreate (Bundle savedInstanceState)
 		{
@@ -68,6 +71,13 @@ namespace CommunityCenter.Fragments.MainTab
 			ll_userInfo = View.FindViewById<LinearLayout> (Resource.Id.ll_userInfo);
 			ll_login_register = View.FindViewById<LinearLayout>(Resource.Id.ll_login_register);
 
+			if (EldYoungUtil.HasLogin) {
+				ll_userInfo.Visibility = ViewStates.Visible;
+				ll_login_register.Visibility = ViewStates.Gone;
+			} else {
+				ll_userInfo.Visibility = ViewStates.Gone;
+				ll_login_register.Visibility = ViewStates.Visible;
+			}
 		
 			//点击注册登录
 			ll_login_register.Click += (object sender, EventArgs e) => 
@@ -94,9 +104,7 @@ namespace CommunityCenter.Fragments.MainTab
 					picPopWindow.ShowPopWindow(View.FindViewById<LinearLayout>(Resource.Id.ll_person));
 				}
 				else
-					EldYoungUtil.StartLoginActivity(Activity);
-
-					
+					EldYoungUtil.StartLoginActivity(Activity);	
 			};
 
 			tv_nickName = View.FindViewById<TextView> (Resource.Id.tv_nickName);
@@ -171,54 +179,109 @@ namespace CommunityCenter.Fragments.MainTab
 			pull_refresh_scroll_my.GetLoadingLayoutProxy (true, false).SetReleaseLabel (GetString(Resource.String.pullDownReleaseLbl));
 			//绑定监听事件
 			pull_refresh_scroll_my.SetOnRefreshListener(this);
-			//第一次进入设置自动刷新view
+			//第一次进入且当guid不为空设置自动刷新view
 			new Handler ().PostDelayed (() => {
-				pull_refresh_scroll_my.Refreshing = true;
-			}, 1000);
-			SetShowInfo ();  
+				if(EldYoungUtil.HasLogin)
+					pull_refresh_scroll_my.Refreshing = true;
+			}, 500);
+
 		}
 		private void SetShowInfo()
 		{
-			if (!EldYoungUtil.HasLogin)
-				return;
-			if (EldYoungUtil.HasLogin) {
-				ll_userInfo.Visibility = ViewStates.Visible;
-				ll_login_register.Visibility = ViewStates.Gone;
-			} else {
-				ll_userInfo.Visibility = ViewStates.Gone;
-				ll_login_register.Visibility = ViewStates.Visible;
-			}
-			//todo:调用webservice获取个人信息,赋值
-
 			//设置用户昵称和手机号
-//			tv_nickName.Text = string.IsNullOrEmpty(Global.MyInfo.UserName)?"未设置昵称":Global.MyInfo.UserName;
-//			var iphoneNumber = Global.MyInfo.PhoneNumberOne;
-//			if (!string.IsNullOrEmpty (iphoneNumber)) {
-//				var midleStr = iphoneNumber.Substring (3, 4);
-//				var resultStr = iphoneNumber.Replace (midleStr, "****");
-//				tv_phonenumber.Text = resultStr;
-//			} else
-//				tv_phonenumber.Text = "未绑定手机号";
-//
-//			//从Sd中找头像，转换成Bitmap
-//	    	//调用web服务获取
-//			Global.imageLoader.DisplayImage(Global.MyInfo.HeadImgReleaseUrl,img_head,Global.Options);
+			tv_nickName.Text = string.IsNullOrEmpty(Global.MyInfo.UserName)?"未设置昵称":Global.MyInfo.UserName;
+			var iphoneNumber = Global.MyInfo.PhoneNumberOne;
+			if (!string.IsNullOrEmpty (iphoneNumber)) {
+				var midleStr = iphoneNumber.Substring (3, 4);
+				var resultStr = iphoneNumber.Replace (midleStr, "****");
+				tv_phonenumber.Text = resultStr;
+			} else
+				tv_phonenumber.Text = "未绑定手机号";
+
+			//从Sd中找头像，转换1`成Bitmap
+	    	//调用web服务获取
+			Global.imageLoader.DisplayImage(Global.MyInfo.HeadImgReleaseUrl,img_head,Global.Options);
 		}
 		public void OnRefresh (PullToRefreshBase p0)
 		{
-			Task.Factory.StartNew (() => {
-				//加载更多数据
-				LoadPersonInfo ();
-			});
+			if (EldYoungUtil.HasLogin) {
+				Task.Factory.StartNew (() => {
+					//加载更多数据
+					LoadPersonInfo ();
+				});
+			} else {
+				pull_refresh_scroll_my.OnRefreshComplete ();
+			}
 		}
 
 		private void LoadPersonInfo()
 		{
-			Thread.Sleep (5000);
-			Activity.RunOnUiThread(()=>
+
+			var myInfoParam = new GetMyInfoParam (){ Uid = Global.Guid };
+			if (!requestMyInfoParams.ContainsKey ("key"))
+				requestMyInfoParams.Add ("key", myInfoParam.Key);
+			else
+				requestMyInfoParams ["key"] = myInfoParam.Key;
+
+			if (!requestMyInfoParams.ContainsKey ("eUId"))
+				requestMyInfoParams.Add ("eUId", myInfoParam.Euid);
+			else
+				requestMyInfoParams ["eUId"] = myInfoParam.Euid;
+
+			if (!requestMyInfoParams.ContainsKey ("eaction"))
+				requestMyInfoParams.Add ("eaction", myInfoParam.Eaction);
+			else
+				requestMyInfoParams ["eaction"] = myInfoParam.Eaction;
+
+			if (!requestMyInfoParams.ContainsKey ("md5"))
+				requestMyInfoParams.Add ("md5", myInfoParam.Md5);
+			else
+				requestMyInfoParams ["md5"] = myInfoParam.Md5;
+			//设置restsharprequest
+			var restSharpRequestHelp = new RestSharpRequestHelp(myInfoParam.Url,requestMyInfoParams);
+			restSharpRequestHelp.ExcuteAsync ((RestSharp.IRestResponse response) => {
+				if(response.ResponseStatus == RestSharp.ResponseStatus.Completed && response.StatusCode == System.Net.HttpStatusCode.OK)
+				{
+					var result = response.Content;
+					var getMyInfoJson = JsonConvert.DeserializeObject<GetMyInfoJson>(result);
+					if(getMyInfoJson.statuscode =="1")
+					{
+						Global.MyInfo = getMyInfoJson.data[0];
+						Activity.RunOnUiThread(()=>
+							{
+								SetShowInfo ();  
+							});
+						
+					}
+					else
+					{
+						Activity.RunOnUiThread(()=>
+						{
+							Toast.MakeText(Activity,"获取信息失败...",ToastLength.Short).Show();
+						});
+					}
+
+				}
+				else if (response.ResponseStatus == RestSharp.ResponseStatus.TimedOut)
+				{
+					Activity.RunOnUiThread(()=>
+					{
+						Toast.MakeText(Activity,"网络连接超时",ToastLength.Short).Show();
+					});
+				}
+				else
+				{
+					Activity.RunOnUiThread(()=>
+					{
+						Toast.MakeText(Activity,response.StatusDescription,ToastLength.Short).Show();
+					});
+				}
+				Activity.RunOnUiThread(()=>
 				{
 					pull_refresh_scroll_my.OnRefreshComplete ();
 				});
+			});
+
 		}
 
 		public void OnClick (View v)

@@ -122,7 +122,7 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.PersonInfoTrueNameActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SendSecurityCodeActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.SetPasswordActivity" />
-    <activity android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.LoginActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.LoginActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.RegisterStepOneActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.RegisterResultActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.ServiceAgreeActivity" />

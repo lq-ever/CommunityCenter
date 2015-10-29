@@ -95,6 +95,9 @@ namespace CommunityCenter
 
 			//退出进入登录界面
 			var btn_Exit = FindViewById<Button> (Resource.Id.btn_Exit);
+			//当前未登录，隐藏退出按钮
+			if (!EldYoungUtil.HasLogin)
+				btn_Exit.Visibility = ViewStates.Gone;
 			btn_Exit.Click += (sender, e) => 
 			{
 				var intent = new Intent(this,typeof(MainActivity));

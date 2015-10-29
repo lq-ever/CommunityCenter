@@ -2,4 +2,4 @@
         android:fromYDelta="0"
         android:toYDelta="5000"
         android:duration="1500"
-    />--><translate android:fromYDelta="0" android:toYDelta="50%p" android:duration="200" /></set>
+    />--><translate android:fromYDelta="25" android:toYDelta="100%p" android:duration="300" /></set>
