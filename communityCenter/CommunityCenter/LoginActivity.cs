@@ -31,7 +31,6 @@ namespace CommunityCenter
 		private TextView tv_Register;
 		private JPushUtil _jpushUtil;
 		private Dictionary<string,string> requestParams = new Dictionary<string,string> ();
-	
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -53,6 +52,7 @@ namespace CommunityCenter
 				OverridePendingTransition(Resource.Animation.bottom_out,0);
 			};
 			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "登录";
+
 
 			_jpushUtil = new JPushUtil (this);
 			// Create your application here
@@ -84,6 +84,7 @@ namespace CommunityCenter
 			//点击注册
 			tv_Register.Click += (sender, e) => 
 			{
+				
 				StartActivity(typeof(RegisterStepOneActivity));
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
@@ -188,17 +189,18 @@ namespace CommunityCenter
 						}
 						RunOnUiThread (()=>
 							{
-								//跳转到功能主界面
-								var intent = new Intent(this,typeof(MainActivity));
-								intent.SetFlags(ActivityFlags.ClearTask|ActivityFlags.NewTask);
+								var  funcType = Intent.GetIntExtra(Global.FuncType,0);
+								//跳转到功能界面
+								var intent = new Intent(this,FuncTypeActivityFactory.CreateFuncActivityFactory(funcType));
+								if(funcType==(int)FuncActivityType.Main)
+									intent.SetFlags(ActivityFlags.ClearTask|ActivityFlags.NewTask);
 								var bundle = Intent.Extras;
 								if (bundle != null)
 									intent.PutExtras (bundle);
 								StartActivity(intent);						
 								this.Finish();
-								Toast.MakeText(this,"登录成功",ToastLength.Short).Show();
 								OverridePendingTransition(Android.Resource.Animation.FadeIn,Android.Resource.Animation.FadeOut);
-
+								Toast.MakeText(this,"登录成功",ToastLength.Short).Show();
 							});
 					}
 					else

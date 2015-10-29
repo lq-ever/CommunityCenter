@@ -46,23 +46,23 @@ namespace CommunityCenter.Fragments.MainTab
 			gv_server = View.FindViewById<GridView> (Resource.Id.gv_server);
 			var adapter = new ServerItemAdapter (Activity);
 
-			adapter.Add(new ServerTypeItem(){ServerTypeName="管理员",ServerTypeImage= Resource.Drawable.Icon});
-			adapter.Add (new ServerTypeItem (){ ServerTypeName = "跑腿", ServerTypeImage = Resource.Drawable.Icon });
-			adapter.Add(new ServerTypeItem(){ServerTypeName="护理",ServerTypeImage= Resource.Drawable.Icon});
-			adapter.Add (new ServerTypeItem (){ ServerTypeName = "家政", ServerTypeImage = Resource.Drawable.Icon });
+			adapter.Add(new ServerTypeItem(){ServerTypeName="管理员",ServerTypeImage= Resource.Drawable.Icon,FuncType = FuncActivityType.AdminMain});
+			adapter.Add (new ServerTypeItem (){ ServerTypeName = "跑腿", ServerTypeImage = Resource.Drawable.Icon,FuncType =FuncActivityType.ErrandMain });
+			adapter.Add(new ServerTypeItem(){ServerTypeName="护理",ServerTypeImage= Resource.Drawable.Icon,FuncType = FuncActivityType.NurseMain});
+			adapter.Add (new ServerTypeItem (){ ServerTypeName = "家政", ServerTypeImage = Resource.Drawable.Icon,FuncType = FuncActivityType.HouseKeepMain });
 			gv_server.Adapter = adapter;
 			//gridview 单击事件
 			gv_server.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => 
 			{
-				var clickServerType = adapter.GetItem(e.Position).ServerTypeName;
+				var clickItem = adapter.GetItem(e.Position);
 				if(EldYoungUtil.HasLogin)
 				{
-					Activity.StartActivity(ServerTargetActivityFactory.CreateServerTargetFactory(clickServerType));
+					Activity.StartActivity(FuncTypeActivityFactory.CreateFuncActivityFactory((int)clickItem.FuncType));
 					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 				}
 				else
 				{
-					EldYoungUtil.StartLoginActivity(Activity);
+					EldYoungUtil.StartLoginActivity(Activity,clickItem.FuncType);
 				}
 			};
 
