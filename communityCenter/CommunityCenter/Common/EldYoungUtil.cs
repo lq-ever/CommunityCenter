@@ -37,12 +37,20 @@ namespace CommunityCenter.Common
 		/// 启动登录活动activity.并传入参数至下一步
 		/// </summary>
 		/// <param name="activity">Activity.</param>
-		public static void StartLoginActivity(Activity activity,FuncActivityType _funcActivityType)
+		public static void StartTargetActivity(Activity activity,FuncActivityType _funcActivityType)
 		{
-			Intent intent = new Intent (activity, typeof(LoginActivity));
-			intent.PutExtra (Global.FuncType, (int)_funcActivityType);
-			activity.StartActivity(intent);
-			activity.OverridePendingTransition(Resource.Animation.bottom_in,0);
+			var type = FuncTypeActivityFactory.CreateFuncActivityFactory ((int)_funcActivityType);
+			if (HasLogin) {
+				//已经登录
+				activity.StartActivity(type);
+				activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			} else {
+				//未登录，跳转到登录界面
+				Intent intent = new Intent (activity, typeof(LoginActivity));
+				intent.PutExtra (Global.FuncType, (int)_funcActivityType);
+				activity.StartActivity (intent);
+				activity.OverridePendingTransition (Resource.Animation.bottom_in, 0);
+			}
 		}
 
 		/// <summary>

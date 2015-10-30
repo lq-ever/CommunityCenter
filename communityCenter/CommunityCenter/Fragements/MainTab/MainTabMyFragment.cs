@@ -79,10 +79,10 @@ namespace CommunityCenter.Fragments.MainTab
 				ll_login_register.Visibility = ViewStates.Invisible;
 			}
 		
-			//点击注册登录
+			//点击注册登录界面
 			ll_login_register.Click += (object sender, EventArgs e) => 
 			{
-				EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Main);
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.Main);
 			};
 
 			//设置操作
@@ -113,51 +113,29 @@ namespace CommunityCenter.Fragments.MainTab
 			var rl_person_basic = View.FindViewById<RelativeLayout> (Resource.Id.rl_person_basic);
 			rl_person_basic.Click += (sender, e) => 
 			{
-				if(EldYoungUtil.HasLogin)
-				{
-					Activity.StartActivity(typeof(PersonInfoActivity));
-					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
-				}
-				else
-					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.PersonInfo);
+
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.PersonInfo);
 				
 			};
 			//账户安全
 			var rl_person_accountSecurity = View.FindViewById<RelativeLayout> (Resource.Id.rl_person_accountSecurity);
 			rl_person_accountSecurity.Click += (sender, e) => 
    		    {
-				if(EldYoungUtil.HasLogin)
-				{
-					Activity.StartActivity(typeof(AccountSecurityActivity));
-				    Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
-				}
-				else
-					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.AccountSecurity);
+				
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.AccountSecurity);
 
 			};
 			//证书
 			var rl_person_certificate = View.FindViewById<RelativeLayout>(Resource.Id.rl_person_certificate);
 			rl_person_certificate.Click += (object sender, EventArgs e) => 
-			{
-				if(EldYoungUtil.HasLogin)
-				{
-					Activity.StartActivity(typeof(CertificateActivity));
-					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
-				}
-				else
-					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Certificate);
+			{				
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.Certificate);
 			};
 			//投诉建议
 			var rl_person_advice = View.FindViewById<RelativeLayout> (Resource.Id.rl_person_advice);
 			rl_person_advice.Click += (sender, e) => 
 			{
-				if(EldYoungUtil.HasLogin)
-				{
-					Activity.StartActivity(typeof(AdviceActivity));
-					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
-				}
-				else
-					EldYoungUtil.StartLoginActivity(Activity,FuncActivityType.Advice);
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.Advice);
 			};
 			//拨打电话
 			var tv_customPhone = View.FindViewById<TextView>(Resource.Id.tv_customPhone);

@@ -71,6 +71,18 @@ namespace CommunityCenter.Common
 			case (int)FuncActivityType.PersonInfo:
 				_activityType = typeof(PersonInfoActivity);
 				break;
+			case (int)FuncActivityType.Charge:
+				_activityType = typeof(ChargeActivity);
+				break;
+			case (int)FuncActivityType.WithDraw:
+				_activityType = typeof(WithDrawActivity);
+				break;
+			case (int)FuncActivityType.BankCards:
+				_activityType = typeof(BankCardsActivity);
+				break;
+			case (int)FuncActivityType.DealRecords:
+				_activityType = typeof(DealRecordsActivity);
+				break;
 			}
 			return _activityType;
 		}

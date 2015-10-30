@@ -32,7 +32,11 @@ namespace CommunityCenter
 		PersonInfo=5,//个人信息
 		AccountSecurity=6,//账户安全
 		Certificate=7,//证书
-		Advice=8//投诉建议
+		Advice=8,//投诉建议
+		Charge=9,//充值
+		WithDraw=10,//提现
+		BankCards =11,//银行卡
+		DealRecords=12//交易记录
 	}
 
 }

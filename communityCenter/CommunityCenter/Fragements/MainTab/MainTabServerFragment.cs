@@ -55,15 +55,7 @@ namespace CommunityCenter.Fragments.MainTab
 			gv_server.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => 
 			{
 				var clickItem = adapter.GetItem(e.Position);
-				if(EldYoungUtil.HasLogin)
-				{
-					Activity.StartActivity(FuncTypeActivityFactory.CreateFuncActivityFactory((int)clickItem.FuncType));
-					Activity.OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
-				}
-				else
-				{
-					EldYoungUtil.StartLoginActivity(Activity,clickItem.FuncType);
-				}
+				EldYoungUtil.StartTargetActivity(Activity,clickItem.FuncType);
 			};
 
 		}

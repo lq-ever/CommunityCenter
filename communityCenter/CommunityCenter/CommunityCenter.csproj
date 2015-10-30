@@ -189,6 +189,10 @@
     <Compile Include="Param\GetMyInfoParam.cs" />
     <Compile Include="Json\GetMyInfoJson.cs" />
     <Compile Include="Common\FuncTypeActivityFactory.cs" />
+    <Compile Include="Activitys\Finance\ChargeActivity.cs" />
+    <Compile Include="Activitys\Finance\WithDrawActivity.cs" />
+    <Compile Include="Activitys\Finance\BankCardsActivity.cs" />
+    <Compile Include="Activitys\Finance\DealRecordsActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
