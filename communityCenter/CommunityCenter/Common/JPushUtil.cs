@@ -23,7 +23,6 @@ namespace CommunityCenter.Common
 			//或得共享实例变量
 			sp_userinfo = context.GetSharedPreferences(Global.SHAREDPREFERENCES_USERINFO,FileCreationMode.Private);
 			sp_jpushInfo = context.GetSharedPreferences (Global.SHAREDPREFERENCES_JPUSH, FileCreationMode.Private);
-
 		}
 
 		/// <summary>

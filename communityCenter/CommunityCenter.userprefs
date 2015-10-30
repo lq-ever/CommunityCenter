@@ -1,13 +1,16 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\My\AccountSecurityActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Common\CommunityCenterApplication.cs">
     <Files>
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminMainActivity.cs" Line="40" Column="75" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\BindGuardianActivity.cs" Line="62" Column="64" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\HealthRecordsActivity.cs" Line="62" Column="16" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminMainActivity.cs" Line="1" Column="1" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\BindGuardianActivity.cs" Line="1" Column="1" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\HealthRecordsActivity.cs" Line="1" Column="1" />
       <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Common\Global.cs" Line="89" Column="34" />
-      <File FileName="CommunityCenter\Activitys\My\AccountSecurityActivity.cs" Line="67" Column="45" />
+      <File FileName="CommunityCenter\Common\Global.cs" Line="1" Column="1" />
+      <File FileName="CommunityCenter\Activitys\My\AccountSecurityActivity.cs" Line="58" Column="31" />
+      <File FileName="CommunityCenter\Common\JPushUtil.cs" Line="23" Column="14" />
+      <File FileName="CommunityCenter\GuiderActivity.cs" Line="51" Column="43" />
+      <File FileName="CommunityCenter\Common\CommunityCenterApplication.cs" Line="59" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

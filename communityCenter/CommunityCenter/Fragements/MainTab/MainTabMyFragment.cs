@@ -73,10 +73,10 @@ namespace CommunityCenter.Fragments.MainTab
 
 			if (EldYoungUtil.HasLogin) {
 				ll_userInfo.Visibility = ViewStates.Visible;
-				ll_login_register.Visibility = ViewStates.Gone;
+				ll_login_register.Visibility = ViewStates.Invisible;
 			} else {
 				ll_userInfo.Visibility = ViewStates.Gone;
-				ll_login_register.Visibility = ViewStates.Visible;
+				ll_login_register.Visibility = ViewStates.Invisible;
 			}
 		
 			//点击注册登录
@@ -187,6 +187,15 @@ namespace CommunityCenter.Fragments.MainTab
 		}
 		private void SetShowInfo()
 		{
+			if (EldYoungUtil.HasLogin) {
+				ll_userInfo.Visibility = ViewStates.Visible;
+				ll_login_register.Visibility = ViewStates.Invisible;
+			} else {
+				ll_userInfo.Visibility = ViewStates.Invisible;
+				ll_login_register.Visibility = ViewStates.Visible;
+			}
+			if (Global.MyInfo == null)
+				return;
 			//设置用户昵称和手机号
 			tv_nickName.Text = string.IsNullOrEmpty(Global.MyInfo.UserName)?"未设置昵称":Global.MyInfo.UserName;
 			var iphoneNumber = Global.MyInfo.PhoneNumberOne;
@@ -457,6 +466,7 @@ namespace CommunityCenter.Fragments.MainTab
 		public override void OnResume ()
 		{
 			base.OnResume ();
+			SetShowInfo ();
 		}
 	}
 }
