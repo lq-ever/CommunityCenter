@@ -15,12 +15,15 @@ using Android.Support.V4.App;
 using Android.Support.V4.Widget;
 using System.Threading.Tasks;
 using System.Threading;
+using Com.Handmark.Pulltorefresh.Library;
 
 namespace CommunityCenter
 {
-	public class MainTabFinanceFragment : Fragment,SwipeRefreshLayout.IOnRefreshListener
+	public class MainTabFinanceFragment : BaseFragment
 	{
-		private SwipeRefreshLayout swipeRefreshLayout;
+		private PullToRefreshScrollView pull_refresh_scroll_finance;
+		private TextView tv_totalAssets,tv_availableAssets,tv_frozenAssets;
+		private RelativeLayout rl_charge,rl_withDraw,rl_bankCards,rl_DealRecords;
 		public override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -41,18 +44,15 @@ namespace CommunityCenter
 		public override void OnActivityCreated (Bundle savedInstanceState)
 		{
 			base.OnActivityCreated (savedInstanceState);
-			swipeRefreshLayout = View.FindViewById<SwipeRefreshLayout>(Resource.Id.swipe_container);
-			swipeRefreshLayout.SetColorSchemeResources (Android.Resource.Color.HoloBlueLight, Android.Resource.Color.HoloRedLight, Android.Resource.Color.HoloOrangeLight, Android.Resource.Color.HoloGreenLight);
-			swipeRefreshLayout.SetOnRefreshListener (this);
-			swipeRefreshLayout.Refreshing = true;
+
+
 		}
-		public void OnRefresh ()
+
+		public override void LasyloadData ()
 		{
-			Task.Factory.StartNew (() => {
-				Thread.Sleep(3000);
-				swipeRefreshLayout.Refreshing = false;
-			});
+			
 		}
+
 
 	}
 }

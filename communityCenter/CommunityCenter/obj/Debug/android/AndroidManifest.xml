@@ -130,9 +130,9 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.AboutUsActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md528563c8149fd6489b0e77b84619d520c.CertificateActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AdminMainActivity" />
-    <activity android:label="ErrandMainActivity" android:name="md524042b3cc831219d3008d39c37d5a7bd.ErrandMainActivity" />
-    <activity android:label="HouseKeepMainActivity" android:name="md57192d3cd22d5fce570e2bc3b5a159047.HouseKeepMainActivity" />
-    <activity android:label="NurseMainActivity" android:name="md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md524042b3cc831219d3008d39c37d5a7bd.ErrandMainActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md57192d3cd22d5fce570e2bc3b5a159047.HouseKeepMainActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md588d13188b84adaa2d39ff381d0c7b724.NurseMainActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.GuardianApplyActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.BindGuardianActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmRecordsActivity" />

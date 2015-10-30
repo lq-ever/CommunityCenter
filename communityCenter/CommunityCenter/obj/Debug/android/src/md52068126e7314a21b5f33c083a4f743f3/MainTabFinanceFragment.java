@@ -2,10 +2,9 @@ package md52068126e7314a21b5f33c083a4f743f3;
 
 
 public class MainTabFinanceFragment
-	extends android.support.v4.app.Fragment
+	extends md52068126e7314a21b5f33c083a4f743f3.BaseFragment
 	implements
-		mono.android.IGCUserPeer,
-		android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener
+		mono.android.IGCUserPeer
 {
 	static final String __md_methods;
 	static {
@@ -13,7 +12,6 @@ public class MainTabFinanceFragment
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler\n" +
 			"n_onActivityCreated:(Landroid/os/Bundle;)V:GetOnActivityCreated_Landroid_os_Bundle_Handler\n" +
-			"n_onRefresh:()V:GetOnRefreshHandler:Android.Support.V4.Widget.SwipeRefreshLayout/IOnRefreshListenerInvoker, Xamarin.Android.Support.v4\n" +
 			"";
 		mono.android.Runtime.register ("CommunityCenter.MainTabFinanceFragment, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainTabFinanceFragment.class, __md_methods);
 	}
@@ -49,14 +47,6 @@ public class MainTabFinanceFragment
 	}
 
 	private native void n_onActivityCreated (android.os.Bundle p0);
-
-
-	public void onRefresh ()
-	{
-		n_onRefresh ();
-	}
-
-	private native void n_onRefresh ();
 
 	java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
