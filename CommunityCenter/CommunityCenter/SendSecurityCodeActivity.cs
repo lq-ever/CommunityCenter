@@ -50,26 +50,29 @@ namespace CommunityCenter
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
 
-
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+		
 			//取得上一页面传递过来的值包括是什么类型发送验证码（找回密码\修改支付密码\修改密码）
 			var bundle = Intent.Extras;
 			sendType = bundle.GetString ("SendType");
 			phoneNumber = bundle.GetString ("PhoneNumber");
 
-			var tv_header_title = FindViewById<TextView> (Resource.Id.tv_header_title);
+
 			tv_SendCodeStatusShow = FindViewById<TextView>(Resource.Id.tv_SendCodeStatusShow);
 			edit_Phone = FindViewById<EditText> (Resource.Id.edit_Phone);
 			edit_Phone.Text = phoneNumber;
 			if (sendType == "FindPwd") {
-				tv_header_title.Text = "找回登录密码";
+				tv_desc.Text = "找回登录密码";
 				edit_Phone.Enabled = true;
 				edit_Phone.Hint = "请输入手机号";
 			} else if (sendType == "ModifyPwd") {
-				tv_header_title.Text = "修改登录密码";
+				tv_desc.Text = "修改登录密码";
 				edit_Phone.Enabled = false;
 				SetPhoneNumberShow ();
 			} else if (sendType == "ModifyPayPwd") {
-				tv_header_title.Text = "设置支付密码";
+				tv_desc.Text = "设置支付密码";
 				edit_Phone.Enabled = false;
 				SetPhoneNumberShow ();
 			}

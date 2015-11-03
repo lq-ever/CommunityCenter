@@ -42,7 +42,10 @@ namespace CommunityCenter.Activitys.My
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "身份证号";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "个人信息";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "身份证号";
 			//真实姓名
 			edit_IdCardNo = FindViewById<EditText>(Resource.Id.edit_IdCardNo);
 			edit_IdCardNo.Text = string.IsNullOrEmpty (Global.MyInfo.IDNumber) ? "" : Global.MyInfo.IDNumber;

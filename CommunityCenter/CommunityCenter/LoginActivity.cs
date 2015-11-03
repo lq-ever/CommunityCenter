@@ -51,7 +51,12 @@ namespace CommunityCenter
 				this.Finish();
 				OverridePendingTransition(Resource.Animation.bottom_out,0);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "登录";
+
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "登录";
+
 
 
 			_jpushUtil = new JPushUtil (this);

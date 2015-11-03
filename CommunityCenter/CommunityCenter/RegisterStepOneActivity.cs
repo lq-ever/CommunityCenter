@@ -68,7 +68,10 @@ namespace CommunityCenter
 			};
 
 				
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "注册";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "注册";
 
 			edit_Phone = FindViewById<EditText> (Resource.Id.edit_Phone);
 			btn_RegisterNext = FindViewById<Button> (Resource.Id.btn_RegistNext);
