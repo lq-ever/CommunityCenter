@@ -1,1 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android"><!-- 按下时的背景图片 --><item android:state_enabled="true" android:state_pressed="true" android:drawable="@color/lightgray" /><!-- 默认时的背景图片 --><item android:drawable="@color/blue" /></selector>

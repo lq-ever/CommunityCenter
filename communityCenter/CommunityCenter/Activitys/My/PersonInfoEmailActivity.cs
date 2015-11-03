@@ -42,7 +42,10 @@ namespace CommunityCenter.Activitys.My
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "电子邮箱";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "个人信息";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "电子邮箱";
 			edit_email = FindViewById<EditText>(Resource.Id.edit_email);
 
 			//电子邮箱

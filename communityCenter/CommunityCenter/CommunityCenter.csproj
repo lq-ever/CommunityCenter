@@ -380,6 +380,7 @@
     <AndroidResource Include="Resources\layout\alarmListitemView.axml" />
     <AndroidResource Include="Resources\layout\healthListItemView.axml" />
     <AndroidResource Include="Resources\layout\PhysicalDetailInfoLayout.axml" />
+    <AndroidResource Include="Resources\layout\title_action_bar.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -43,7 +43,10 @@ namespace CommunityCenter.Activitys.My
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "固定电话";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "个人信息";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "固定电话";
 			edit_fixedphonePre = FindViewById<EditText>(Resource.Id.edit_fixedphonePre);
 			edit_fixedPhoneLast = FindViewById<EditText> (Resource.Id.edit_fixedPhoneLast);
 			//固定电话

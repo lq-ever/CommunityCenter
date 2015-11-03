@@ -54,8 +54,12 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				nPosition =  Convert.ToDouble(Positions [0].Substring (1));
 				ePosition =  Convert.ToDouble(Positions [1].Substring (1));
 			}
+				
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "报警详细";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "报警位置显示";
 
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "报警位置显示";
 			mMapView = FindViewById<MapView> (Resource.Id.bmap_view);
 			bdMap = mMapView.Map;
 			bdMap.MapType = BaiduMap.MapTypeNormal;

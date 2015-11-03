@@ -2,7 +2,3 @@ E:\GitHub\CommunityCenter\JPushBindingLibrary\bin\Debug\JPushBindingLibrary.dll
 E:\GitHub\CommunityCenter\JPushBindingLibrary\bin\Debug\JPushBindingLibrary.pdb
 E:\GitHub\CommunityCenter\JPushBindingLibrary\obj\Debug\JPushBindingLibrary.dll
 E:\GitHub\CommunityCenter\JPushBindingLibrary\obj\Debug\JPushBindingLibrary.pdb
-E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\bin\Debug\JPushBindingLibrary.dll
-E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\bin\Debug\JPushBindingLibrary.pdb
-E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\obj\Debug\JPushBindingLibrary.dll
-E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\obj\Debug\JPushBindingLibrary.pdb

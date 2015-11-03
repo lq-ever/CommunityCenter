@@ -40,7 +40,10 @@ namespace CommunityCenter.Activitys.My
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "个人信息";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "个人信息";
 			//用户名
 			rl_person_UserName = FindViewById<RelativeLayout> (Resource.Id.rl_person_UserName);
 			tv_UserName = FindViewById<TextView> (Resource.Id.tv_UserName);

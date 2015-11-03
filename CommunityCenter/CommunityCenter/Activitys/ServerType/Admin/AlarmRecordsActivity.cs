@@ -73,7 +73,11 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "报警记录";
+
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "管理员";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "报警记录";
 
 
 			otherAlarmRefreshListView = FindViewById<PullToRefreshListView> (Resource.Id.lv_otherAlarm);

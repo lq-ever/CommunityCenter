@@ -118,9 +118,13 @@ namespace CommunityCenter
 		/// </summary>
 		private void loadData()
 		{
+			//todo:调用web服务获取数据,赋值
 			Thread.Sleep (3000);
-			pull_refresh_scroll_finance.OnRefreshComplete ();
-			IsRefreshing = false;
+			Activity.RunOnUiThread (() => {
+				pull_refresh_scroll_finance.OnRefreshComplete ();
+				IsRefreshing = false;
+			});
+
 		}
 
 	}

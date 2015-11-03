@@ -1,20 +1,19 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Common\CommunityCenterApplication.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs">
     <Files>
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminMainActivity.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\BindGuardianActivity.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\HealthRecordsActivity.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="1" Column="1" />
       <File FileName="CommunityCenter\Common\Global.cs" Line="1" Column="1" />
-      <File FileName="CommunityCenter\Activitys\My\AccountSecurityActivity.cs" Line="58" Column="31" />
-      <File FileName="CommunityCenter\Common\JPushUtil.cs" Line="23" Column="14" />
-      <File FileName="CommunityCenter\GuiderActivity.cs" Line="51" Column="43" />
-      <File FileName="CommunityCenter\Common\CommunityCenterApplication.cs" Line="59" Column="14" />
+      <File FileName="CommunityCenter\Activitys\ServerType\HouseKeep\HouseKeepMainActivity.cs" Line="1" Column="1" />
+      <File FileName="CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" Line="116" Column="16" />
+      <File FileName="CommunityCenter\Fragements\MainTab\MainTabMyFragment.cs" Line="162" Column="28" />
+      <File FileName="CommunityCenter\Common\EldYoungUtil.cs" Line="75" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" line="66" column="4" />
+      <Breakpoint file="E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" line="68" column="4" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.CommunityCenter AndroidDesignerPreferredDevice="Nexus 4" />

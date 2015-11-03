@@ -35,7 +35,12 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "管理员";
+
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "管理员";
+
 			//设置
 			rl_admin_Set = FindViewById<RelativeLayout> (Resource.Id.rl_admin_Set);
 			rl_admin_Set.Click += (object sender, EventArgs e) => 

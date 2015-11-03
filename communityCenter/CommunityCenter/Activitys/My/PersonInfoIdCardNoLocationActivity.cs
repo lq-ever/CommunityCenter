@@ -43,7 +43,11 @@ namespace CommunityCenter.Activitys.My
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
-			FindViewById<TextView> (Resource.Id.tv_header_title).Text = "身份证所在地";
+
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "个人信息";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "身份证所在地";
 			edit_idCardLocation = FindViewById<EditText>(Resource.Id.edit_idCardLocation);
 
 			//身份证所在地

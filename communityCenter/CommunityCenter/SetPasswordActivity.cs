@@ -54,8 +54,11 @@ namespace CommunityCenter
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
 
-			var tv_header_title = FindViewById<TextView> (Resource.Id.tv_header_title);
-			tv_header_title.Text = "设置密码";
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "设置密码";
+
 			edit_Pwd = FindViewById<EditText> (Resource.Id.edit_Pwd);
 			edit_ConfirmPwd = FindViewById<EditText> (Resource.Id.edit_ConfirmPwd);
 			btn_Submit = FindViewById<Button> (Resource.Id.btn_Submit);

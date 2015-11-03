@@ -39,7 +39,11 @@ namespace CommunityCenter.Common
 			}
 			return _activityType;
 		}
-
+		/// <summary>
+		/// 根据功能类型创建对应activitytype
+		/// </summary>
+		/// <returns>The server target factory.</returns>
+		/// <param name="serverTypeName">Server type name.</param>
 		public static Type CreateFuncActivityFactory(int _funcActivityType)
 		{
 			Type _activityType = null; 
