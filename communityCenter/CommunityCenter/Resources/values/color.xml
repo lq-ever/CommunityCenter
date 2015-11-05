@@ -24,4 +24,5 @@
     <color name="griditems_bg">#ffe8ecef</color>
     <color name="commo_text_color">#ff333333</color>
     <color name="line">#ffd3dde6</color>
+    <color name="bg_lightgray">#ffe8ecef</color>
 </resources>

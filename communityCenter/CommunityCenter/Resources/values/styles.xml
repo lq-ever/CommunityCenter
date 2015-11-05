@@ -135,4 +135,25 @@
       <item name="android:layout_marginLeft">5dp</item>
     </style>
 
+    <!--添加银行卡信息 -->
+    <style name="rl_bank_item">
+      <item name="android:gravity">center_vertical</item>
+      <item name="android:background">@color/white</item>
+      <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="tv_bank_key">
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="edit_bank_value">
+       <item name="android:textColor">@color/darkgray</item>
+       <item name="android:textSize">15sp</item>
+       <item name="android:gravity">fill_vertical</item>
+       <item name="android:textColorHint">@color/lightgray</item>
+
+       
+    </style>
+
 </resources>

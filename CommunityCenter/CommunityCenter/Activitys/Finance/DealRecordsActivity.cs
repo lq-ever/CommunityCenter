@@ -13,14 +13,32 @@ using Android.Widget;
 
 namespace CommunityCenter
 {
-	[Activity (Label = "DealRecordsActivity")]			
+	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class DealRecordsActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
+			RequestWindowFeature (WindowFeatures.CustomTitle);
+			SetContentView (Resource.Layout.DealRecordsLayout);
+			Window.SetFeatureInt (WindowFeatures.CustomTitle, Resource.Layout.custom_title_bar);
 			// Create your application here
+			InitView();
+		}
+		private void InitView()
+		{
+			//设置标题栏
+			var img_header_back = FindViewById<ImageView> (Resource.Id.img_header_back);
+			img_header_back.Click += (sender, e) => 
+			{
+				this.Finish();
+				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			};
+			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
+			tv_back.Text = "返回";
+			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
+			tv_desc.Text = "交易记录";
 		}
 	}
 }

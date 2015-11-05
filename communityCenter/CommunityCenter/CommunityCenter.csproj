@@ -193,6 +193,11 @@
     <Compile Include="Activitys\Finance\WithDrawActivity.cs" />
     <Compile Include="Activitys\Finance\BankCardsActivity.cs" />
     <Compile Include="Activitys\Finance\DealRecordsActivity.cs" />
+    <Compile Include="Activitys\Finance\AddBankStepOneActivity.cs" />
+    <Compile Include="Activitys\Finance\AddBankStepTwoActivity.cs" />
+    <Compile Include="Model\Finance\BankCardItem.cs" />
+    <Compile Include="Adapter\BankCardInfoListAdapter.cs" />
+    <Compile Include="Model\ServerType\Admin\AlarmTypeItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -381,6 +386,14 @@
     <AndroidResource Include="Resources\layout\healthListItemView.axml" />
     <AndroidResource Include="Resources\layout\PhysicalDetailInfoLayout.axml" />
     <AndroidResource Include="Resources\layout\title_action_bar.axml" />
+    <AndroidResource Include="Resources\layout\BankCardsLayout.axml" />
+    <AndroidResource Include="Resources\layout\DealRecordsLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeLayout.axml" />
+    <AndroidResource Include="Resources\layout\WithDrawLayout.axml" />
+    <AndroidResource Include="Resources\layout\AddBankStepOneLayout.axml" />
+    <AndroidResource Include="Resources\layout\AddBankStepTwoLayout.axml" />
+    <AndroidResource Include="Resources\layout\BankCardlListitemView.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\JT.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

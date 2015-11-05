@@ -236,7 +236,25 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			});
 
 		}
+		protected override void OnNewIntent (Intent intent)
+		{
+			base.OnNewIntent (intent);
+			var bundle = intent.Extras;
+			var alarmOrigin = bundle.GetString ("alarmOrigin");
+			if (alarmOrigin == "Jpush") {
+				var title = bundle.GetString (JPushInterface.ExtraNotificationTitle);
+				var content = bundle.GetString (JPushInterface.ExtraAlert);
+				var extras = bundle.GetString (JPushInterface.ExtraExtra);
+				JSONObject extrasJson = new JSONObject(extras);
+				alarmId = extrasJson.OptString("aid");
 
+			}
+			else if(alarmOrigin == "alarmList")
+			{
+				alarmId = bundle.GetString ("alarmId");//报警id
+			}
+			LoadDetailData ();
+		}
 	    
 	}
 }

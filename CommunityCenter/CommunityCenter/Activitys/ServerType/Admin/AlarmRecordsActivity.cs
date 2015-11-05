@@ -53,6 +53,11 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		private bool IsRefreshing = false;//是否正在获取数据
 		/** 是否已被加载过一次，第二次就不再去请求数据了 */
 		protected bool HasLoadedOnce;
+
+		private Spinner sp_alarmType;//报警类型
+		private List<AlarmTypeItem> alarmTypeList;
+		private ArrayAdapter<AlarmTypeItem> alarmTypeAdapter;//报警类型适配器
+		private string alarmTypeId;//选择的报警类型
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -114,10 +119,9 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			edit_other_startTime.Text = other_startTime_default;
 			edit_other_endTime.Text = other_endTime_default;
 
-			rgp_other_alarmWay = FindViewById<RadioGroup> (Resource.Id.rgp_other_alarmWay);
 
-			rbtn_other_paul = FindViewById<RadioButton> (Resource.Id.rbtn_other_paul);
-			rbtn_other_trip = FindViewById<RadioButton> (Resource.Id.rbtn_other_trip);
+
+
 			btn_other_search =FindViewById<Button> (Resource.Id.btn_other_search);
 			//查询按钮
 			btn_other_search.Click += (sender, e) => 
@@ -131,6 +135,11 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			sp_other_guardian.OnItemSelectedListener = this;   
 			sp_other_guardian.Visibility = ViewStates.Visible;//设置默认值
 
+
+			//下拉框
+			sp_alarmType = FindViewById<Spinner>(Resource.Id.sp_alarmType);
+			sp_alarmType.OnItemSelectedListener = this;   
+			sp_alarmType.Visibility = ViewStates.Visible;//设置默认值
 
 			//设置自定义列表adapter		
 			alarmInfoAdapter = new AlarmInfoListAdapter (this);
@@ -160,6 +169,25 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				datepickdialog.DatePickDialogShow ((EditText)v);
 			}
 		}
+
+		/// <summary>
+		/// 初始化报警类型
+		/// </summary>
+		private void InitAlarmTypeSpinner()
+		{
+			alarmTypeList = new List<AlarmTypeItem> ()
+			{
+				new AlarmTypeItem(){AlarmTypeId="0",AlarmTypeDesc="PAUL报警"},new AlarmTypeItem(){AlarmTypeId="1",AlarmTypeDesc="摔倒报警"},
+				new AlarmTypeItem(){AlarmTypeId="1002",AlarmTypeDesc="紧急求助报警"},new AlarmTypeItem(){AlarmTypeId="1003",AlarmTypeDesc="无活动报警"},
+				new AlarmTypeItem(){AlarmTypeId="1011",AlarmTypeDesc="防盗报警"},new AlarmTypeItem(){AlarmTypeId="1012",AlarmTypeDesc="火灾报警"},
+				new AlarmTypeItem(){AlarmTypeId="1013",AlarmTypeDesc="燃气泄漏报警"}
+			};
+			alarmTypeAdapter = new ArrayAdapter<AlarmTypeItem>(this,Android.Resource.Layout.SimpleSpinnerItem,alarmTypeList);
+			alarmTypeAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+			sp_alarmType.Adapter = alarmTypeAdapter;
+			sp_alarmType.SetSelection(0,true);
+		}
+
 		/// <summary>
 		/// 设置我的监护人下拉框
 		/// </summary>
@@ -218,14 +246,19 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		#region spinner 事件
 		public  void OnItemSelected (AdapterView parent, View view, int position, long id)
 		{
-			var userSelected = myUserListAdapter.GetItem (position);
-			myUserId = userSelected.UId;
-			parent.Visibility = ViewStates.Visible;
-			RunOnUiThread(()=>
-			{
+			if (parent.Id == Resource.Id.sp_other_guardian) {
+				var userSelected = myUserListAdapter.GetItem (position);
+				myUserId = userSelected.UId;
+				parent.Visibility = ViewStates.Visible;
+
+			} else if (parent.Id == Resource.Id.sp_alarmType) {
+				var alarmTypeSelected = alarmTypeAdapter.GetItem (position);
+				alarmTypeId = alarmTypeSelected.AlarmTypeId;
+				parent.Visibility = ViewStates.Visible;
+			}
+			if(!string.IsNullOrEmpty(myUserId))
 				//第一次进入设置自动刷新view
 				otherAlarmRefreshListView.Refreshing = true;
-			});
 
 		}
 		public void OnNothingSelected (AdapterView parent)
@@ -235,6 +268,8 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		#endregion
 		public  void LasyloadData ()
 		{
+			//填充报警方式类别
+			InitAlarmTypeSpinner ();
 			InitSpinner ();//填充我的监护人
 		}
 
@@ -321,7 +356,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			alarmInfoListParam.PageIndex = pageIndex.ToString();
 			alarmInfoListParam.StartTime = string.IsNullOrEmpty( edit_other_startTime.Text)?other_startTime_default:edit_other_startTime.Text;
 			alarmInfoListParam.EndTime = string.IsNullOrEmpty( edit_other_endTime.Text)?other_endTime_default:edit_other_endTime.Text;
-			alarmInfoListParam.AlarmType = rbtn_other_paul.Checked?"0":"1";
+			alarmInfoListParam.AlarmType = alarmTypeId;
 			SetRestRequestParams ();
 		}
 		/// <summary>
