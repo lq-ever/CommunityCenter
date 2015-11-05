@@ -13,8 +13,8 @@
         android:padding="12.0dip">
         <ImageView
             android:id="@+id/img_server"
-            android:layout_width="58.0dip"
-            android:layout_height="58.0dip"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_centerHorizontal="true"
             android:contentDescription="@string/app_name" />
         <TextView

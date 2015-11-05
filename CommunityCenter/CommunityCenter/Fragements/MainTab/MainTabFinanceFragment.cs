@@ -20,7 +20,7 @@ using CommunityCenter.Common;
 
 namespace CommunityCenter
 {
-	public class MainTabFinanceFragment : BaseFragment,PullToRefreshBase.IOnRefreshListener
+	public class MainTabFinanceFragment :Fragment,PullToRefreshBase.IOnRefreshListener
 	{
 		private PullToRefreshScrollView pull_refresh_scroll_finance;
 		private TextView tv_totalAssets,tv_availableAssets,tv_frozenAssets;
@@ -83,18 +83,15 @@ namespace CommunityCenter
 				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.DealRecords);
 			};
 			//初始化加载完成
-			IsPrepared = true;
+
+			new Handler ().PostDelayed (() => {
+				if(EldYoungUtil.HasLogin)
+					//第一次进入设置自动刷新view
+					pull_refresh_scroll_finance.Refreshing = true;
+			}, 500);
+
 		}
-		/// <summary>
-		/// 延迟加载
-		/// </summary>
-		public override void LasyloadData ()
-		{
-			if (!IsPrepared || !IsVisible)
-				return;
-			//第一次进入设置自动刷新view
-			pull_refresh_scroll_finance.Refreshing = true;
-		}
+
 
 		/// <summary>
 		/// 下拉刷新回调函数

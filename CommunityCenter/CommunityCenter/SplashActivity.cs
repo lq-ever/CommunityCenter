@@ -16,7 +16,7 @@ using CN.Jpush.Android.Api;
 
 namespace CommunityCenter
 {
-	[Activity (MainLauncher =true,ScreenOrientation= ScreenOrientation.Portrait, NoHistory = true,Theme= "@style/AppTheme")]			
+	[Activity (MainLauncher =true,ScreenOrientation= ScreenOrientation.Portrait,  NoHistory = true,Theme= "@style/AppTheme")]			
 	public class SplashActivity : InstrumentedActivity,IDialogInterfaceOnKeyListener
 	{
 		private Dialog noticeDialog;
@@ -69,8 +69,6 @@ namespace CommunityCenter
 			//读取refrence文件
 			var isFirstLaunch = sharedPreferenceuserinfo.GetBoolean (Global.refrence_IsFirstIn, true);//是否第一次登录
 			Global.Guid = sharedPreferenceuserinfo.GetString(Global.refrence_Guid,string.Empty);//guid
-
-
 			if (isFirstLaunch) {
 				//软件第一次使用，进入功能引导页				
 				StartActivity (typeof(GuiderActivity));
