@@ -28,6 +28,11 @@ namespace CommunityCenter.Model.Finance
 		/// </summary>
 		/// <value>The bank card type identifier.</value>
 		public string BankCardTypeId {
+			get; 
+			set;
+		}
+
+		public string BankCardTypeDesc {
 			get;
 			set;
 		}

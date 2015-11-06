@@ -101,7 +101,7 @@ namespace CommunityCenter
 		private void loadData()
 		{
 			//todo:调用web服务获取已经绑定银行卡数据
-			Thread.Sleep (3000);
+			Thread.Sleep (2000);
 			RunOnUiThread (() => {
 				bankInfoLists.Clear();
 				bankCardAdapter.Clear();

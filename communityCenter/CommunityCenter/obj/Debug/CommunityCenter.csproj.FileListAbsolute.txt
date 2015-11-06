@@ -196,6 +196,7 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\bin\Debug\JPushBinding
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\bin\Debug\BaiduMapApiBindingLibrary.pdb
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\bin\Debug\RestSharp.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\CommunityCenter.csprojResolveAssemblyReference.cache
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\CommunityCenter.dll
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\CommunityCenter.pdb
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\android\bin\com.lelaozu.communitycenter.apk
@@ -385,8 +386,9 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\c
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\withdrawlayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\addbanksteponelayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\addbanksteptwolayout.xml
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\CommunityCenter.csprojResolveAssemblyReference.cache
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\bankcardllistitemview.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\jt.png
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\choosebanktypelayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\choosewithdrawbanklayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt

@@ -198,6 +198,8 @@
     <Compile Include="Model\Finance\BankCardItem.cs" />
     <Compile Include="Adapter\BankCardInfoListAdapter.cs" />
     <Compile Include="Model\ServerType\Admin\AlarmTypeItem.cs" />
+    <Compile Include="Activitys\Finance\ChooseBankTypeActivity.cs" />
+    <Compile Include="Activitys\Finance\ChooseWithDrawBankActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -394,6 +396,8 @@
     <AndroidResource Include="Resources\layout\AddBankStepTwoLayout.axml" />
     <AndroidResource Include="Resources\layout\BankCardlListitemView.axml" />
     <AndroidResource Include="Resources\drawable-xxhdpi\JT.png" />
+    <AndroidResource Include="Resources\layout\ChooseBankTypeLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChooseWithDrawBankLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\Finance\BankCardsActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\Finance\ChooseBankTypeActivity.cs">
     <Files>
-      <File FileName="CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" Line="109" Column="26" />
-      <File FileName="CommunityCenter\Activitys\Finance\BankCardsActivity.cs" Line="109" Column="21" />
-      <File FileName="CommunityCenter\Model\Finance\BankCardItem.cs" Line="3" Column="40" />
-      <File FileName="CommunityCenter\Adapter\BankCardInfoListAdapter.cs" Line="8" Column="34" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AlarmRecordsActivity.cs" Line="272" Column="6" />
+      <File FileName="CommunityCenter\Activitys\Finance\ChooseBankTypeActivity.cs" Line="63" Column="4" />
+      <File FileName="CommunityCenter\Activitys\Finance\AddBankStepTwoActivity.cs" Line="116" Column="85" />
+      <File FileName="CommunityCenter\Model\Finance\BankCardItem.cs" Line="32" Column="8" />
+      <File FileName="CommunityCenter\Adapter\BankCardInfoListAdapter.cs" Line="33" Column="97" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

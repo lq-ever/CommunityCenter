@@ -14,6 +14,7 @@ using CommunityCenter.Common;
 using CommunityCenter.Param;
 using Newtonsoft.Json;
 using CommunityCenter.Json;
+using CommunityCenter.Activitys.Finance;
 
 namespace CommunityCenter
 {
@@ -24,10 +25,14 @@ namespace CommunityCenter
 		private TextView tv_SendCodeStatusShow;
 		private CheckBox cb_defaut_bank;
 		private Button btn_Send,btn_Add;
+		private ImageView img_choosebank;
 		private MyCount mc;
 		private string phoneNumber;
 		private Dictionary<string,string> requestsendcodeParams = new Dictionary<string,string> ();
 		private string securityCode;
+
+		private string choosebankTypeId;
+		private string choosebankImgUrl;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -58,6 +63,7 @@ namespace CommunityCenter
 			edit_bankCardNo = FindViewById<EditText> (Resource.Id.edit_bankCardNo);
 			edit_prePhoneNo = FindViewById<EditText> (Resource.Id.edit_prePhoneNo);
 			edit_Code = FindViewById<EditText> (Resource.Id.edit_Code);
+			img_choosebank = FindViewById<ImageView> (Resource.Id.img_choosebank);
 
 			tv_SendCodeStatusShow = FindViewById<TextView> (Resource.Id.tv_SendCodeStatusShow);
 
@@ -65,6 +71,13 @@ namespace CommunityCenter
 			btn_Send = FindViewById<Button> (Resource.Id.btn_Send);
 			btn_Add = FindViewById<Button> (Resource.Id.btn_Add);
 
+			//选择银行卡
+			img_choosebank.Click += (sender, e) => 
+			{
+				var intent = new Intent(this,typeof(ChooseBankTypeActivity));
+				var requestCode = 0;  
+				StartActivityForResult(intent,requestCode);
+			};
 			//安全码验证
 			edit_Code.TextChanged += (sender, e) => 
 			{
@@ -88,6 +101,21 @@ namespace CommunityCenter
 			{
 				AddBank();
 			};
+		}
+
+
+		protected override void OnActivityResult (int requestCode, Result resultCode, Intent data)
+		{
+			base.OnActivityResult (requestCode, resultCode, data);
+
+			if (resultCode == Result.Ok) {
+				choosebankTypeId = data.GetStringExtra ("choosebankTypeId");
+				choosebankImgUrl = data.GetStringExtra ("choosebankImgUrl");
+				//赋值
+				if (!string.IsNullOrEmpty (choosebankImgUrl))
+					Global.imageLoader.DisplayImage (choosebankImgUrl, img_choosebank, Global.Options);
+			}
+
 		}
 
 		/// <summary>

@@ -145,7 +145,7 @@
         <item name="android:textColor">@color/darkgray</item>
         <item name="android:textSize">13sp</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginLeft">10dp</item>
+
     </style>
     <style name="edit_bank_value">
        <item name="android:textColor">@color/darkgray</item>

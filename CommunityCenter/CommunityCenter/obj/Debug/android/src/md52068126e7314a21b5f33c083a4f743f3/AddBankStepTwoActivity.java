@@ -10,6 +10,7 @@ public class AddBankStepTwoActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
 			"n_finish:()V:GetFinishHandler\n" +
 			"n_onStop:()V:GetOnStopHandler\n" +
 			"n_onResume:()V:GetOnResumeHandler\n" +
@@ -32,6 +33,14 @@ public class AddBankStepTwoActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public void onActivityResult (int p0, int p1, android.content.Intent p2)
+	{
+		n_onActivityResult (p0, p1, p2);
+	}
+
+	private native void n_onActivityResult (int p0, int p1, android.content.Intent p2);
 
 
 	public void finish ()

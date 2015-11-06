@@ -55,6 +55,27 @@
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             style="@style/rl_bank_item">
+            <TextView
+                android:id="@+id/tv_choosebank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择银行卡："
+                android:layout_marginLeft="15dp"
+                style="@style/tv_bank_key"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/img_choosebank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/tv_choosebank"
+                android:src="@drawable/jt" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rl_bank_item">
             <EditText
                 android:id="@+id/edit_bankopenloc"
                 android:layout_width="match_parent"
