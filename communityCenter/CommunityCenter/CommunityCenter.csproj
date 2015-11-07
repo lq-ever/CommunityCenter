@@ -200,6 +200,12 @@
     <Compile Include="Model\ServerType\Admin\AlarmTypeItem.cs" />
     <Compile Include="Activitys\Finance\ChooseBankTypeActivity.cs" />
     <Compile Include="Activitys\Finance\ChooseWithDrawBankActivity.cs" />
+    <Compile Include="Activitys\Finance\ChooseDealRecordConditionActivity.cs" />
+    <Compile Include="Model\Finance\DealStatusItem.cs" />
+    <Compile Include="Model\Finance\DealTypeItem.cs" />
+    <Compile Include="Model\Finance\DealRecordItem.cs" />
+    <Compile Include="Activitys\Finance\DealRecordDetailActivity.cs" />
+    <Compile Include="Adapter\DealRecordListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -398,6 +404,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\JT.png" />
     <AndroidResource Include="Resources\layout\ChooseBankTypeLayout.axml" />
     <AndroidResource Include="Resources\layout\ChooseWithDrawBankLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChooseDealRecordsConditionLayout.axml" />
+    <AndroidResource Include="Resources\layout\DealRecordListitemView.axml" />
+    <AndroidResource Include="Resources\layout\DetailRecordDetailLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

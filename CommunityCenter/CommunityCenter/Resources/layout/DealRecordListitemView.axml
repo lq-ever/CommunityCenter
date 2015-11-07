@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:id="@+id/dealRecordlistitemview">
+    <TextView
+        android:id="@+id/tv_dealTime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="2015-03-04 11:12:03"
+        android:textColor="@color/ingray"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_dealTypeDesc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="充值"
+        android:textColor="@color/ingray"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_dealAmmount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="200.00"
+        android:textColor="@color/ingray"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_dealAccountName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="环迅支付"
+        android:textColor="@color/ingray"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_dealStatusDesc"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="交易成功"
+        android:textColor="@color/ingray"
+        android:gravity="center" />
+</LinearLayout>
