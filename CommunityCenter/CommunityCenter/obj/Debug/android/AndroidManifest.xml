@@ -34,7 +34,7 @@
   <uses-permission android:name="android.permission.BROADCAST_STICKY" />
   <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
   <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-  <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="md5f24a26c40d63a3a47028aca12244d2d7.CommunityCenterApplication" android:debuggable="true">
+  <application android:label="@string/app_name" android:icon="@drawable/ic_launch" android:name="md5f24a26c40d63a3a47028aca12244d2d7.CommunityCenterApplication" android:debuggable="true">
     <!-- Required SDK核心功能push activity -->
     <activity android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:configChanges="orientation|keyboardHidden">
       <intent-filter>
@@ -142,16 +142,17 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmDetailInfoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmLocationActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.PhysicalDetailInfoActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.ChargeActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.WithDrawActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.BankCardsActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.DealRecordsActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.AddBankStepOneActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.AddBankStepTwoActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.BankCardsActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.DealRecordsActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.AddBankStepOneActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.AddBankStepTwoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChooseBankTypeActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChooseWithDrawBankActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChooseDealRecordConditionActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.DealRecordDetailActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.DealRecordDetailActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.DailyPayActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lelaozu.communitycenter.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

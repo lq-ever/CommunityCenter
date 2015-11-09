@@ -16,7 +16,7 @@ using System.Threading;
 using CommunityCenter.Adapter;
 using CommunityCenter.Model.Finance;
 
-namespace CommunityCenter
+namespace CommunityCenter.Activitys.Finance
 {
 	[Activity (Theme = "@style/MyCustomTheme" )]			
 	public class BankCardsActivity : Activity,PullToRefreshBase.IOnRefreshListener

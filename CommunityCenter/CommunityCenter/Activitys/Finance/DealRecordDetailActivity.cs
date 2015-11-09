@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using CommunityCenter.Common;
 
-namespace CommunityCenter
+namespace CommunityCenter.Activitys.Finance
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class DealRecordDetailActivity : Activity

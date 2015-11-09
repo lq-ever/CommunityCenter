@@ -16,7 +16,7 @@ using CommunityCenter.Adapter;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CommunityCenter
+namespace CommunityCenter.Activitys.Finance
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class DealRecordsActivity : Activity,PullToRefreshBase.IOnRefreshListener2

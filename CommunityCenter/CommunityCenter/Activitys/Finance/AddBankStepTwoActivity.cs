@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 using CommunityCenter.Json;
 using CommunityCenter.Activitys.Finance;
 
-namespace CommunityCenter
+namespace CommunityCenter.Activitys.Finance
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class AddBankStepTwoActivity : Activity

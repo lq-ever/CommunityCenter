@@ -36,7 +36,8 @@ namespace CommunityCenter
 		Charge=9,//充值
 		WithDraw=10,//提现
 		BankCards =11,//银行卡
-		DealRecords=12//交易记录
+		DealRecords=12,//交易记录
+		DailyPay =13//日常缴费	
 	}
 
 }

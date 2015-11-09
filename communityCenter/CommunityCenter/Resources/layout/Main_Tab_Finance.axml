@@ -108,7 +108,7 @@
                         android:layout_height="58.0dip"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_launch" />
+                        android:src="@drawable/icon_recharge" />
                     <TextView
                         android:id="@+id/tv_charge"
                         android:layout_width="wrap_content"
@@ -135,7 +135,7 @@
                         android:layout_height="58.0dip"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_launch" />
+                        android:src="@drawable/icon_withdraw" />
                     <TextView
                         android:id="@+id/tv_withDraw"
                         android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
                         android:layout_height="58.0dip"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_launch" />
+                        android:src="@drawable/icon_bankcard" />
                     <TextView
                         android:id="@+id/tv_bankCards"
                         android:layout_width="wrap_content"
@@ -194,7 +194,7 @@
                         android:layout_height="58.0dip"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_launch" />
+                        android:src="@drawable/icon_record" />
                     <TextView
                         android:id="@+id/tv_DealRecords"
                         android:layout_width="wrap_content"
@@ -206,6 +206,65 @@
                         android:textColor="@color/darkgray"
                         android:textSize="18sp"
                         android:text="交易记录" />
+                </RelativeLayout>
+            </LinearLayout>
+        <!-- 功能区生活缴费-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="1dp">
+                <RelativeLayout
+                    android:id="@+id/rl_dailyPay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gv_selector"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/img_dailyPay"
+                        android:layout_width="58.0dip"
+                        android:layout_height="58.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_dailyPay" />
+                    <TextView
+                        android:id="@+id/tv_dailyPay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_dailyPay"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:maxLines="1"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18sp"
+                        android:text="生 活 缴 费" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_respect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gv_selector"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/img_respect"
+                        android:layout_width="58.0dip"
+                        android:layout_height="58.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_more" />
+                    <TextView
+                        android:id="@+id/tv_respect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_respect"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5.0dip"
+                        android:maxLines="1"
+                        android:textColor="@color/darkgray"
+                        android:textSize="18sp"
+                        android:text="更 新 中..." />
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

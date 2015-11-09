@@ -24,7 +24,7 @@ namespace CommunityCenter
 	{
 		private PullToRefreshScrollView pull_refresh_scroll_finance;
 		private TextView tv_totalAssets,tv_availableAssets,tv_frozenAssets;
-		private RelativeLayout rl_charge,rl_withDraw,rl_bankCards,rl_DealRecords;
+		private RelativeLayout rl_charge,rl_withDraw,rl_bankCards,rl_DealRecords,rl_dailyPay,rl_respect;
 
 		private bool IsRefreshing = false;//是否正在获取数据
 		private Dictionary<string,string> requestParams = new Dictionary<string,string> ();
@@ -62,6 +62,8 @@ namespace CommunityCenter
 			rl_withDraw = View.FindViewById<RelativeLayout> (Resource.Id.rl_withDraw);
 			rl_bankCards = View.FindViewById<RelativeLayout> (Resource.Id.rl_bankCards);
 			rl_DealRecords = View.FindViewById<RelativeLayout> (Resource.Id.rl_DealRecords);
+			rl_dailyPay = View.FindViewById<RelativeLayout> (Resource.Id.rl_dailyPay);
+			rl_respect = View.FindViewById<RelativeLayout> (Resource.Id.rl_respect);
 			//充值
 			rl_charge.Click += (object sender, EventArgs e) => 
 			{
@@ -81,6 +83,16 @@ namespace CommunityCenter
 			rl_DealRecords.Click += (sender, e) => 
 			{
 				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.DealRecords);
+			};
+			//日常缴费
+			rl_dailyPay.Click += (object sender, EventArgs e) => 
+			{
+				EldYoungUtil.StartTargetActivity(Activity,FuncActivityType.DailyPay);
+			};
+			//更多
+			rl_respect.Click += (sender, e) => 
+			{
+				//todo nothing
 			};
 			//初始化加载完成
 

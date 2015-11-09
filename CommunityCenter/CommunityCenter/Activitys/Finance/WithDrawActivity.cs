@@ -62,7 +62,7 @@ namespace CommunityCenter
 			tv_SendCodeStatusShow = FindViewById<TextView> (Resource.Id.tv_SendCodeStatusShow);
 
 			edit_dealPwd = FindViewById<EditText> (Resource.Id.edit_dealPwd);
-			edit_securityCode = FindViewById<EditText> (Resource.Id.edit_SecurityCode);
+			edit_securityCode = FindViewById<EditText> (Resource.Id.edit_securityCode);
 			edit_withdrawmoney = FindViewById<EditText> (Resource.Id.edit_withdrawmoney);
 
 			btn_Add = FindViewById<Button> (Resource.Id.btn_Add);

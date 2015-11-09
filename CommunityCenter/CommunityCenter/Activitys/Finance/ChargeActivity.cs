@@ -11,7 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace CommunityCenter
+namespace CommunityCenter.Activitys.Finance
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class ChargeActivity : Activity

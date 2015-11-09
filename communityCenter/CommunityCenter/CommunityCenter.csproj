@@ -206,6 +206,7 @@
     <Compile Include="Model\Finance\DealRecordItem.cs" />
     <Compile Include="Activitys\Finance\DealRecordDetailActivity.cs" />
     <Compile Include="Adapter\DealRecordListAdapter.cs" />
+    <Compile Include="Activitys\Finance\DailyPayActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -217,10 +218,6 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\Splash.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\color.xml" />
@@ -242,7 +239,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_bindingGuardian.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_more.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_basicInformation.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launch.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_eye_normal.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_eye_selected.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_login_password.png" />
@@ -407,6 +403,26 @@
     <AndroidResource Include="Resources\layout\ChooseDealRecordsConditionLayout.axml" />
     <AndroidResource Include="Resources\layout\DealRecordListitemView.axml" />
     <AndroidResource Include="Resources\layout\DetailRecordDetailLayout.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_recharge.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_withdraw.png" />
+    <AndroidResource Include="Resources\layout\DailyPayLayout.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_ele.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_fix.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_gas.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_oil.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_phone.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_traffic.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_tv.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_water.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launch.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_more.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_run.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_admin.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_bankcard.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_record.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_nurse.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_dailyPay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -435,6 +451,9 @@
     <Folder Include="Model\ServerType\HouseKeep\" />
     <Folder Include="Model\ServerType\Nurse\" />
     <Folder Include="Activitys\Finance\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JPushBindingLibrary\JPushBindingLibrary.csproj">

@@ -5,6 +5,7 @@ using CommunityCenter.Activitys.ServerType.Errand;
 using CommunityCenter.Activitys.Nurse;
 using CommunityCenter.Activitys.HouseKeep;
 using CommunityCenter.Activitys.My;
+using CommunityCenter.Activitys.Finance;
 
 namespace CommunityCenter.Common
 {
@@ -86,6 +87,9 @@ namespace CommunityCenter.Common
 				break;
 			case (int)FuncActivityType.DealRecords:
 				_activityType = typeof(DealRecordsActivity);
+				break;
+			case (int)FuncActivityType.DailyPay:
+				_activityType = typeof(DailyPayActivity);
 				break;
 			}
 			return _activityType;
