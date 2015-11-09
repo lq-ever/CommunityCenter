@@ -148,7 +148,6 @@ namespace CommunityCenter.Activitys.Finance
 		{
 			if (parent.Id == Resource.Id.sp_deal_status) {
 				dealStatus = dealStatusAdapter.GetItem (position).DealStatusId;
-
 				parent.Visibility = ViewStates.Visible;
 
 			} else if (parent.Id == Resource.Id.sp_deal_type) {

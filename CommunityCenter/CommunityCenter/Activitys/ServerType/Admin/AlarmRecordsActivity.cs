@@ -30,8 +30,6 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		private int lastY;
 		private ListView actualListView;
 		private EditText edit_other_startTime, edit_other_endTime;
-		private RadioGroup rgp_other_alarmWay;
-		private RadioButton rbtn_other_paul, rbtn_other_trip;
 		private Button btn_other_search;
 		private Spinner sp_other_guardian;
 

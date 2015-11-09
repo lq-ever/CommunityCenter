@@ -65,21 +65,42 @@ namespace CommunityCenter
 				StartActivityForResult(intent,requestCode);
 			};
 
+			//对条件赋初始值
+			dealStatus = "0";
+			dealStartTime = DateTime.Now.ToString ("yyyy-MM-dd");
+			dealEndTime = DateTime.Now.AddDays (1).ToString ("yyyy-MM-dd");
+
 			//设置下拉刷新动画
 			lv_dealRecords = FindViewById<PullToRefreshListView> (Resource.Id.lv_dealRecords);
 			actualListView = (ListView)lv_dealRecords.RefreshableView;
 			//设置可以上拉加载。下拉刷新
-			lv_dealRecords.Mode = PullToRefreshBase.PullToRefreshMode.PullFromStart;
+			lv_dealRecords.Mode = PullToRefreshBase.PullToRefreshMode.Both;
 			//下拉刷新提示文本
-			lv_dealRecords.GetLoadingLayoutProxy(true,false).SetPullLabel(string.Empty);
-			lv_dealRecords.GetLoadingLayoutProxy (true,false).SetRefreshingLabel(string.Empty);
-			lv_dealRecords.GetLoadingLayoutProxy (true, false).SetReleaseLabel (string.Empty);
+
+			//下拉刷新提示文本
+			lv_dealRecords.GetLoadingLayoutProxy(true,false).SetPullLabel(GetString(Resource.String.pullDownLbl));
+			lv_dealRecords.GetLoadingLayoutProxy (true,false).SetRefreshingLabel(GetString(Resource.String.pullDownRefreshLbl));
+			lv_dealRecords.GetLoadingLayoutProxy (true, false).SetReleaseLabel (GetString(Resource.String.pullDownReleaseLbl));
+			//上拉加载提示文本
+			lv_dealRecords.GetLoadingLayoutProxy(false,true).SetPullLabel(GetString(Resource.String.pullUpLbl));
+			lv_dealRecords.GetLoadingLayoutProxy (false, true).SetRefreshingLabel (GetString(Resource.String.pullUpRefreshLbl));
+			lv_dealRecords.GetLoadingLayoutProxy (false, true).SetReleaseLabel (GetString(Resource.String.pullUpReleaseLbl));
 			//绑定监听事件
 			lv_dealRecords.SetOnRefreshListener(this);
 			//设置自定义列表adapter		
 			dealRecordAdapter = new DealRecordListAdapter (this);
 			actualListView.Adapter = dealRecordAdapter;
 
+			actualListView.ItemClick+= (object sender, AdapterView.ItemClickEventArgs e) => 
+			{
+				var intent  = new Intent(this,typeof(DealRecordDetailActivity));
+				var bundle = new Bundle();
+			
+				bundle.PutString("dealRecordId",dealRecordAdapter.GetItem(e.Position-1).DealRecordId);
+				intent.PutExtras(bundle);
+				StartActivity(intent);
+				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			};
 			//第一次不为空设置自动刷新view
 			new Handler ().PostDelayed (() => {
 				lv_dealRecords.Refreshing = true;
@@ -95,7 +116,8 @@ namespace CommunityCenter
 				dealType = data.GetStringExtra ("dealType");
 				dealStartTime = data.GetStringExtra ("dealStarttime");
 				dealEndTime = data.GetStringExtra ("dealEndtime");
-
+				//todo:重新刷新数据
+				loadData();
 			}
 		}
 
@@ -104,13 +126,13 @@ namespace CommunityCenter
 		private void loadData()
 		{
 			//todo:调用web服务获取已经绑定银行卡数据
-			Thread.Sleep (2000);
+			Thread.Sleep (1000);
 			RunOnUiThread (() => {
 				dealRecordInfoLists.Clear();
 				dealRecordAdapter.Clear();
-				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="50",DealStatusDesc="成功",DealTypeDesc="充值",AccountName="环迅支付"});
-				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="10",DealStatusDesc="失败",DealTypeDesc="宽带费",AccountName="环迅支付"});
-				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="500",DealStatusDesc="成功",DealTypeDesc="购物",AccountName="环迅支付"});
+				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="50",DealStatusDesc="成功",DealTypeDesc="充值",AccountName="环迅支付",DealRecordId="215421"});
+				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="10",DealStatusDesc="失败",DealTypeDesc="宽带费",AccountName="环迅支付",DealRecordId="125224"});
+				dealRecordInfoLists.Add(new DealRecordItem(){DealTime="2015-10-12 13:20:24",DealAmount="500",DealStatusDesc="成功",DealTypeDesc="购物",AccountName="环迅支付",DealRecordId="1545665"});
 
 				dealRecordAdapter.AddAll(dealRecordInfoLists);
 				dealRecordAdapter.NotifyDataSetChanged();

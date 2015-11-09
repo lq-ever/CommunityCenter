@@ -1,13 +1,8 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\Finance\WithDrawActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Model\Finance\BankCardItem.cs">
     <Files>
       <File FileName="CommunityCenter\Model\Finance\BankCardItem.cs" Line="35" Column="33" />
-      <File FileName="CommunityCenter\Activitys\Finance\WithDrawActivity.cs" Line="97" Column="16" />
-      <File FileName="CommunityCenter\Resources\values\styles.xml" Line="148" Column="1" />
-      <File FileName="CommunityCenter\Activitys\Finance\ChooseWithDrawBankActivity.cs" Line="68" Column="82" />
-      <File FileName="CommunityCenter\Activitys\Finance\ChooseBankTypeActivity.cs" Line="66" Column="63" />
-      <File FileName="CommunityCenter\Activitys\Finance\AddBankStepTwoActivity.cs" Line="88" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

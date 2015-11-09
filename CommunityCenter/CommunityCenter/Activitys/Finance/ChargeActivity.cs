@@ -16,6 +16,9 @@ namespace CommunityCenter
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class ChargeActivity : Activity
 	{
+		private TextView tv_chargeAccount;
+		private EditText edit_chargeAmmount;
+		private Button btn_charge;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -38,6 +41,24 @@ namespace CommunityCenter
 			tv_back.Text = "返回";
 			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
 			tv_desc.Text = "充值";
+
+			tv_chargeAccount = FindViewById<TextView> (Resource.Id.tv_chargeAccount);
+			edit_chargeAmmount = FindViewById<EditText> (Resource.Id.edit_chargeAmmount);
+			btn_charge = FindViewById<Button> (Resource.Id.btn_charge);
+
+			//充值
+			btn_charge.Click += (sender, e) => 
+			{
+				Charge();
+			};
+
+		}
+		/// <summary>
+		/// 调用webservice进行充值
+		/// </summary>
+		private void Charge()
+		{
+			Toast.MakeText (this,"充值成功",ToastLength.Short);
 		}
 	}
 }

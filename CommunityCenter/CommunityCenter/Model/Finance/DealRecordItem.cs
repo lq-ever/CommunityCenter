@@ -7,6 +7,10 @@ namespace CommunityCenter
 		public DealRecordItem ()
 		{
 		}
+		public string DealRecordId {
+			get;
+			set;
+		}
 		public string DealTime {
 			get;
 			set;
