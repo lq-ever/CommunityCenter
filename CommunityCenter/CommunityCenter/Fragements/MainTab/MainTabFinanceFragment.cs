@@ -116,7 +116,7 @@ namespace CommunityCenter
 		private void loadData()
 		{
 			//todo:调用web服务获取数据,赋值
-			Thread.Sleep (3000);
+			Thread.Sleep (1000);
 			Activity.RunOnUiThread (() => {
 				pull_refresh_scroll_finance.OnRefreshComplete ();
 				IsRefreshing = false;

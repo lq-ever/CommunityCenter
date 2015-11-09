@@ -93,7 +93,7 @@
         <!-- 功能区充值-提现-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="20dp">
                 <RelativeLayout
                     android:id="@+id/rl_charge"
@@ -152,7 +152,7 @@
         <!-- 功能区银行卡-交易记录-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="1dp">
                 <RelativeLayout
                     android:id="@+id/rl_bankCards"
