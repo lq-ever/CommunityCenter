@@ -1,8 +1,10 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Model\Finance\BankCardItem.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\Finance\DailyPayActivity.cs">
     <Files>
-      <File FileName="CommunityCenter\Model\Finance\BankCardItem.cs" Line="35" Column="33" />
+      <File FileName="CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" Line="97" Column="13" />
+      <File FileName="CommunityCenter\Fragements\MainTab\MainTabServerFragment.cs" Line="47" Column="51" />
+      <File FileName="CommunityCenter\Activitys\Finance\DailyPayActivity.cs" Line="31" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

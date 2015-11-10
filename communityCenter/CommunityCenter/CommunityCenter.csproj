@@ -207,6 +207,14 @@
     <Compile Include="Activitys\Finance\DealRecordDetailActivity.cs" />
     <Compile Include="Adapter\DealRecordListAdapter.cs" />
     <Compile Include="Activitys\Finance\DailyPayActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargePhoneActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargeWaterActivity.cs" />
+    <Compile Include="Activitys\Finance\ChageEleActivity.cs" />
+    <Compile Include="Activitys\Finance\ChageGasActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargeTvActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargeFixActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargeOilActivity.cs" />
+    <Compile Include="Activitys\Finance\ChargeTrafficActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -423,6 +431,14 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon_nurse.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon_dailyPay.png" />
+    <AndroidResource Include="Resources\layout\ChargePhoneLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeWaterLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeEleLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeGasLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeTvLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeFixLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeOilLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargeTrafficLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

@@ -37,7 +37,15 @@ namespace CommunityCenter
 		WithDraw=10,//提现
 		BankCards =11,//银行卡
 		DealRecords=12,//交易记录
-		DailyPay =13//日常缴费	
+		DailyPay =13,//日常缴费
+		ChargeEle=14,//电缴费
+		ChargeGas=15,//煤缴费
+		ChargeFix=16,//固话宽带缴费
+		ChargeOil=17,//加油卡充值
+		ChargePhone=18,//充话费
+		ChargeTraffic=19,//交通违章缴费
+		ChargeTv=20,//有限电视缴费
+		ChargeWater=21//水缴费
 	}
 
 }
