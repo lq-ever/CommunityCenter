@@ -215,6 +215,11 @@
     <Compile Include="Activitys\Finance\ChargeFixActivity.cs" />
     <Compile Include="Activitys\Finance\ChargeOilActivity.cs" />
     <Compile Include="Activitys\Finance\ChargeTrafficActivity.cs" />
+    <Compile Include="Activitys\ServerType\ServiceTimeActivity.cs" />
+    <Compile Include="Activitys\ServerType\ServiceAreaActivity.cs" />
+    <Compile Include="Activitys\ServerType\ServiceDescActivity.cs" />
+    <Compile Include="Activitys\ServerType\ChargingSetActivity.cs" />
+    <Compile Include="Model\ServerType\WeekItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -439,6 +444,11 @@
     <AndroidResource Include="Resources\layout\ChargeFixLayout.axml" />
     <AndroidResource Include="Resources\layout\ChargeOilLayout.axml" />
     <AndroidResource Include="Resources\layout\ChargeTrafficLayout.axml" />
+    <AndroidResource Include="Resources\layout\AdminSetLayout.axml" />
+    <AndroidResource Include="Resources\layout\ServiceTimeLayout.axml" />
+    <AndroidResource Include="Resources\layout\ServiceAreaLayout.axml" />
+    <AndroidResource Include="Resources\layout\ServiceDescLayout.axml" />
+    <AndroidResource Include="Resources\layout\ChargingSetLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

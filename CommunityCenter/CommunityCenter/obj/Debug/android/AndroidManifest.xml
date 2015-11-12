@@ -153,6 +153,14 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChooseDealRecordConditionActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.DealRecordDetailActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.DailyPayActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargePhoneActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeWaterActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChageEleActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChageGasActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeTvActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeFixActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeOilActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeTrafficActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lelaozu.communitycenter.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

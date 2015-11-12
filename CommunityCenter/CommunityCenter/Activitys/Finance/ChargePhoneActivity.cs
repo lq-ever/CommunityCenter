@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace CommunityCenter.Activitys.Finance
 {
-	[Activity (Label = "ChargePhoneActivity")]			
+	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class ChargePhoneActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

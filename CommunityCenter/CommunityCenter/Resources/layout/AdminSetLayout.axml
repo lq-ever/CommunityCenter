@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rl_bank_item"
+            android:id="@+id/rl_service_time">
+            <TextView
+                android:id="@+id/tv_serviceTimeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务时间："
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darkgray"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_serviceTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/edit_bank_value"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_serviceTimeDesc"
+                android:text="周一 至 周五" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myInfomation_next_arrow"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rl_bank_item"
+            android:id="@+id/rl_service_Area">
+            <TextView
+                android:id="@+id/tv_serviceAreaDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务范围："
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darkgray"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_serviceArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/edit_bank_value"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_serviceAreaDesc"
+                android:text="南京江宁区-雨花台区" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myInfomation_next_arrow"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rl_bank_item"
+            android:id="@+id/rl_service_desc">
+            <TextView
+                android:id="@+id/tv_service_desc_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务描述："
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darkgray"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_servicedesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/edit_bank_value"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_service_desc_desc"
+                android:text="好的" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myInfomation_next_arrow"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            style="@style/rl_bank_item"
+            android:id="@+id/rl_service_chargingSet">
+            <TextView
+                android:id="@+id/tv_chargingSet_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收费设置："
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/darkgray"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_ChargingSet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/edit_bank_value"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_chargingSet_desc"
+                android:text="10元/时" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myInfomation_next_arrow"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

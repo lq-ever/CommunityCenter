@@ -410,3 +410,11 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_housekeep.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_nurse.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_dailypay.png
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargephonelayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargewaterlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargeelelayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargegaslayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargetvlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargefixlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargeoillayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargetrafficlayout.xml
