@@ -23,6 +23,9 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		private const int ServiceDesc = 3;
 		private const int ChargingSet = 4;
 		private string startWeek, endWeek,startTime,endTime;//时间相关
+		private string startServiceArea,endServiceArea;//服务范围相关
+		private string serviceDesc;//服务描述
+		private string chargeYHour, chargeYDay;//收费设置
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -95,7 +98,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		/// </summary>
 		private void LoadData()
 		{
-			
+			//todo:调用webservice
 		}
 		protected override void OnActivityResult (int requestCode, Result resultCode, Intent data)
 		{
@@ -112,15 +115,26 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				}
 
 			} else if (requestCode == ServiceArea) {
-
+				if (resultCode == Result.Ok) {
+					startServiceArea = data.GetStringExtra ("startServiceArea");
+					endServiceArea = data.GetStringExtra ("endServiceArea");
+					tv_serviceArea.Text = startServiceArea + "--" + endServiceArea;
+				}
 
 				
 			} else if (requestCode == ServiceDesc) {
-				
+				if (resultCode == Result.Ok) {
+					serviceDesc = data.GetStringExtra ("serviceDesc");
+					tv_servicedesc.Text = serviceDesc;
+				}
 				
 			} else if (requestCode == ChargingSet) {
 
-
+				if (resultCode == Result.Ok) {
+					chargeYDay = data.GetStringExtra ("chargeYDay");
+					chargeYHour = data.GetStringExtra ("chargeYHour");
+					tv_ChargingSet.Text = chargeYHour + "元/时 " + chargeYDay + "元/天";
+				}
 			}
 
 		}

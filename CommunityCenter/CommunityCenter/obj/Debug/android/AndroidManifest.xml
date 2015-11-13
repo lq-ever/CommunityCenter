@@ -137,7 +137,7 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.BindGuardianActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmRecordsActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.HealthRecordsActivity" />
-    <activity android:label="AdminSetActivity" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AdminSetActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AdminSetActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.GuardianDetailInfoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmDetailInfoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmLocationActivity" />
@@ -161,6 +161,10 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeFixActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeOilActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5f2eb740d50080e0aab25ea61de4875c2.ChargeTrafficActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceTimeActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceAreaActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceDescActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ChargingSetActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lelaozu.communitycenter.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

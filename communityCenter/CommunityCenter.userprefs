@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\Finance\DailyPayActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs">
     <Files>
-      <File FileName="CommunityCenter\Fragements\MainTab\MainTabFinanceFragment.cs" Line="97" Column="13" />
-      <File FileName="CommunityCenter\Fragements\MainTab\MainTabServerFragment.cs" Line="58" Column="17" />
-      <File FileName="CommunityCenter\Activitys\Finance\DailyPayActivity.cs" Line="72" Column="30" />
-      <File FileName="CommunityCenter\Common\EldYoungUtil.cs" Line="35" Column="4" />
-      <File FileName="CommunityCenter\Common\FuncTypeActivityFactory.cs" Line="55" Column="20" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="96" Column="26" />
+      <File FileName="CommunityCenter\Activitys\ServerType\ServiceTimeActivity.cs" Line="84" Column="31" />
+      <File FileName="CommunityCenter\Activitys\ServerType\ChargingSetActivity.cs" Line="14" Column="47" />
+      <File FileName="CommunityCenter\Activitys\Finance\ChooseDealRecordConditionActivity.cs" Line="103" Column="19" />
+      <File FileName="CommunityCenter\Activitys\Finance\DealRecordsActivity.cs" Line="115" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

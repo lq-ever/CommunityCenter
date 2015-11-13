@@ -220,6 +220,7 @@
     <Compile Include="Activitys\ServerType\ServiceDescActivity.cs" />
     <Compile Include="Activitys\ServerType\ChargingSetActivity.cs" />
     <Compile Include="Model\ServerType\WeekItem.cs" />
+    <Compile Include="Common\TimePickDialogUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -449,6 +450,7 @@
     <AndroidResource Include="Resources\layout\ServiceAreaLayout.axml" />
     <AndroidResource Include="Resources\layout\ServiceDescLayout.axml" />
     <AndroidResource Include="Resources\layout\ChargingSetLayout.axml" />
+    <AndroidResource Include="Resources\layout\commontimepickerlayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

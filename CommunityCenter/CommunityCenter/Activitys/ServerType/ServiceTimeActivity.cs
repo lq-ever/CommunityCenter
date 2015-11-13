@@ -23,6 +23,7 @@ namespace CommunityCenter.Activitys.ServerType
 		private ArrayAdapter<WeekItem> startWeekAdapter,endWeekAdapter;
 		private string startWeek, endWeek,startTime,endTime;
 		private Button btn_Confirm;
+		private int serviceType;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -62,9 +63,15 @@ namespace CommunityCenter.Activitys.ServerType
 
 			edit_startTime.OnFocusChangeListener = this;
 			edit_startTime.InputType = Android.Text.InputTypes.Null;
+			edit_startTime.Text = DateTime.Now.ToString("t");
+
 
 			edit_endTime.OnFocusChangeListener = this;
 			edit_endTime.InputType = Android.Text.InputTypes.Null;
+			edit_endTime.Text = DateTime.Now.AddHours(2).ToString("t");
+
+			//获取serviceType值
+			serviceType = Intent.GetIntExtra("serviceType",0);
 			//初始化日期数据
 			weekList = new List<WeekItem> () {
 				new WeekItem (){ Week = WeekType.Monday, WeekDesc = "周一" },
@@ -78,6 +85,8 @@ namespace CommunityCenter.Activitys.ServerType
 			};
 			//初始化下拉框
 			InitWeekSpinner();
+			//确认按钮
+			btn_Confirm = FindViewById<Button> (Resource.Id.btn_Confirm);
 			btn_Confirm.Click += (sender, e) => 
 			{
 				var intent = new Intent();
@@ -100,8 +109,8 @@ namespace CommunityCenter.Activitys.ServerType
 		{
 			if (hasFocus) {
 				((EditText)v).ClearFocus ();
-				var datepickdialog = new DatePickDialogUtil (this, ((EditText)v).Text);
-				datepickdialog.DatePickDialogShow ((EditText)v);
+				var datepickdialog = new TimePickDialogUtil (this, ((EditText)v).Text);
+				datepickdialog.TimePickDialogShow((EditText)v);
 			}
 		}
 
@@ -116,10 +125,10 @@ namespace CommunityCenter.Activitys.ServerType
 			sp_startWeek.Adapter = startWeekAdapter;
 			sp_startWeek.SetSelection(0,true);
 			//结束周
-			startWeekAdapter = new ArrayAdapter<WeekItem>(this,Android.Resource.Layout.SimpleSpinnerItem,weekList);
-			startWeekAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-			sp_startWeek.Adapter = startWeekAdapter;
-			sp_startWeek.SetSelection(0,true);
+			endWeekAdapter = new ArrayAdapter<WeekItem>(this,Android.Resource.Layout.SimpleSpinnerItem,weekList);
+			endWeekAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+			sp_endWeek.Adapter = endWeekAdapter;
+			sp_endWeek.SetSelection(0,true);
 
 		}
 

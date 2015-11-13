@@ -224,7 +224,6 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_action_bindingguardian.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_action_more.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_basicinformation.png
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_launch.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_login_eye_normal.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_login_eye_selected.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_login_password.png
@@ -389,8 +388,6 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\c
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\choosedealrecordsconditionlayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\dealrecordlistitemview.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\detailrecorddetaillayout.xml
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
-E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_recharge.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_withdraw.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\dailypaylayout.xml
@@ -402,6 +399,7 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_traffic.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_tv.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_water.png
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\ic_launch.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_more.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_run.png
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\drawable-xxhdpi\icon_admin.png
@@ -418,3 +416,11 @@ E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\c
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargefixlayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargeoillayout.xml
 E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargetrafficlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\adminsetlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\servicetimelayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\servicearealayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\servicedesclayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\chargingsetlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\res\layout\commontimepickerlayout.xml
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\R.cs.flag
+E:\GitHub\CommunityCenter\CommunityCenter\CommunityCenter\obj\Debug\uploadflags.txt
