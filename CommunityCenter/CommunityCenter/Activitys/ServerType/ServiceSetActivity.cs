@@ -121,13 +121,13 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 					tv_serviceArea.Text = startServiceArea + "--" + endServiceArea;
 				}
 
-				
+
 			} else if (requestCode == ServiceDesc) {
 				if (resultCode == Result.Ok) {
 					serviceDesc = data.GetStringExtra ("serviceDesc");
 					tv_servicedesc.Text = serviceDesc;
 				}
-				
+
 			} else if (requestCode == ChargingSet) {
 
 				if (resultCode == Result.Ok) {
