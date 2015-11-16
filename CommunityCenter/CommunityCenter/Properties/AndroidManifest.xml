@@ -98,7 +98,7 @@
 		<meta-data android:name="JPUSH_APPKEY" android:value="97b8f2bcb8ff74f4ea1559d2" />
 		<!--  使用百度地图API-->
 		<!-- release版 AK -->
-		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="3nHrsEhS3RmqKnAhrVqloa8G" />
+		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="z2z5EqSaiAHYlZRR7OWGfpMy" />
 		<!--- debug版 AK -->
 		<!--		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="9WsxQZv9L0lQakclbH4xrjzG" />-->
 	</application>
