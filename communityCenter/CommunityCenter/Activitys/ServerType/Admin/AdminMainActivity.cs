@@ -46,7 +46,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			rl_admin_Set.Click += (object sender, EventArgs e) => 
 			{
 				
-				StartActivity(typeof(AdminSetActivity));
+				StartActivity(typeof(ServiceSetActivity));
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
 			//会员申请

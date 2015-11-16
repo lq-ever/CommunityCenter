@@ -44,13 +44,14 @@ namespace CommunityCenter.Activitys.ServerType
 			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
 			tv_desc.Text = "设置服务描述";
 
+			edit_serviceDesc = FindViewById<EditText> (Resource.Id.edit_serviceDesc);
 			//获取serviceType值
 			serviceType = Intent.GetIntExtra("serviceType",0);
 
 			btn_Confirm = FindViewById<Button> (Resource.Id.btn_Confirm);
 			btn_Confirm.Click += (object sender, EventArgs e) => 
 			{
-				serviceDesc = tv_desc.Text;
+				serviceDesc = edit_serviceDesc.Text;
 				var intent = new Intent();
 				intent.PutExtra("serviceDesc",serviceDesc);
 				//todo:调用webservice提交服务器

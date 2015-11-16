@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="96" Column="26" />
-      <File FileName="CommunityCenter\Activitys\ServerType\ServiceTimeActivity.cs" Line="84" Column="31" />
-      <File FileName="CommunityCenter\Activitys\ServerType\ChargingSetActivity.cs" Line="14" Column="47" />
-      <File FileName="CommunityCenter\Activitys\Finance\ChooseDealRecordConditionActivity.cs" Line="103" Column="19" />
-      <File FileName="CommunityCenter\Activitys\Finance\DealRecordsActivity.cs" Line="115" Column="38" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="67" Column="1" />
+      <File FileName="CommunityCenter\Activitys\ServerType\ServiceDescActivity.cs" Line="28" Column="52" />
+      <File FileName="CommunityCenter\Activitys\ServerType\ServiceTimeActivity.cs" Line="111" Column="1" />
+      <File FileName="CommunityCenter\Common\DatePickDialogUtil.cs" Line="54" Column="33" />
+      <File FileName="CommunityCenter\Common\TimePickDialogUtil.cs" Line="35" Column="18" />
+      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AlarmRecordsActivity.cs" Line="113" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,4 @@
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\bin\Release\BaiduMapApiBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\bin\Release\BaiduMapApiBindingLibrary.pdb
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\obj\Release\BaiduMapApiBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\BaiduMapApiBindingLibrary\obj\Release\BaiduMapApiBindingLibrary.pdb

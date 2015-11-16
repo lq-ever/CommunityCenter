@@ -157,7 +157,6 @@
     <Compile Include="Activitys\ServerType\Admin\BindGuardianActivity.cs" />
     <Compile Include="Activitys\ServerType\Admin\AlarmRecordsActivity.cs" />
     <Compile Include="Activitys\ServerType\Admin\HealthRecordsActivity.cs" />
-    <Compile Include="Activitys\ServerType\Admin\AdminSetActivity.cs" />
     <Compile Include="Model\ServerType\Admin\GuardianInfoListItem.cs" />
     <Compile Include="Adapter\GuardianInfoAdapter.cs" />
     <Compile Include="Param\UnBindGuardianParam.cs" />
@@ -221,6 +220,7 @@
     <Compile Include="Activitys\ServerType\ChargingSetActivity.cs" />
     <Compile Include="Model\ServerType\WeekItem.cs" />
     <Compile Include="Common\TimePickDialogUtil.cs" />
+    <Compile Include="Activitys\ServerType\Admin\ServiceSetActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

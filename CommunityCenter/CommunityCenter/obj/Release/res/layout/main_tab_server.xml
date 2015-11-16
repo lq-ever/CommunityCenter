@@ -1,0 +1,25 @@
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:layout_width="match_parent" style="@style/action_bar" android:minWidth="25px" android:minHeight="25px"><TextView style="@style/action_bar_tv" android:text="服 务" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" /></LinearLayout><!--    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/myinfomation_bgimage" />
+            <GridView
+                android:id="@+id/gv_server"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="2"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>--><md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="vertical" xmlns:app="http://schemas.android.com/apk/res-auto"><LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"><ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/myinfomation_bgimage" /><md5f24a26c40d63a3a47028aca12244d2d7.CustomGridView android:id="@+id/gv_server" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="2" android:verticalSpacing="2dp" android:horizontalSpacing="2dp" android:stretchMode="columnWidth" android:gravity="center" android:scrollbars="none" android:listSelector="@null" /></LinearLayout></md5f24a26c40d63a3a47028aca12244d2d7.MyScrollView></LinearLayout>

@@ -1,0 +1,4 @@
+E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\bin\Release\JPushBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\bin\Release\JPushBindingLibrary.pdb
+E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\obj\Release\JPushBindingLibrary.dll
+E:\GitHub\CommunityCenter\CommunityCenter\JPushBindingLibrary\obj\Release\JPushBindingLibrary.pdb
