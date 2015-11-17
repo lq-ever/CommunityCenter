@@ -11,7 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace CommunityCenter.Activitys.ServerType.Admin
+namespace CommunityCenter.Activitys.ServerType
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class ServiceSetActivity : Activity
@@ -26,6 +26,8 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 		private string startServiceArea,endServiceArea;//服务范围相关
 		private string serviceDesc;//服务描述
 		private string chargeYHour, chargeYDay;//收费设置
+
+		private int serviceType;//服务类型
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -45,10 +47,13 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 				this.Finish();
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
+			//获取服务类型值
+			serviceType = Intent.GetIntExtra ("serviceType", 0);
 			var tv_back = FindViewById<TextView> (Resource.Id.tv_back);
 			tv_back.Text = "返回";
 			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
-			tv_desc.Text = "管理员设置";
+			//界面赋值
+			tv_desc.Text = GetActivityDesc (serviceType);
 
 			rl_service_time = FindViewById<RelativeLayout> (Resource.Id.rl_service_time);
 			rl_service_Area = FindViewById<RelativeLayout> (Resource.Id.rl_service_Area);
@@ -62,7 +67,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			rl_service_time.Click += (sender, e) => 
 			{
 				var intent = new Intent(this,typeof(ServiceTimeActivity));
-				intent.PutExtra("serviceType",(int)ServiceType.Admin);
+				intent.PutExtra("serviceType",serviceType);
 				StartActivityForResult(intent,ServiceTime);
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
@@ -70,7 +75,7 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			rl_service_Area.Click += (sender, e) => 
 			{
 				var intent = new Intent(this,typeof(ServiceAreaActivity));
-				intent.PutExtra("serviceType",(int)ServiceType.Admin);
+				intent.PutExtra("serviceType",serviceType);
 				StartActivityForResult(intent,ServiceArea);
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
@@ -78,20 +83,45 @@ namespace CommunityCenter.Activitys.ServerType.Admin
 			rl_service_desc.Click += (sender, e) => 
 			{
 				var intent = new Intent(this,typeof(ServiceDescActivity));
-				intent.PutExtra("serviceType",(int)ServiceType.Admin);
+				intent.PutExtra("serviceType",serviceType);
 				StartActivityForResult(intent,ServiceDesc);
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
+
 			//收费设置
+			//只有是管理员设置时显示收费设置
+			if (serviceType != (int)ServiceType.Admin) {
+				rl_service_chargingSet.Visibility = ViewStates.Gone;
+			}
 			rl_service_chargingSet.Click += (sender, e) => 
 			{
 				var intent = new Intent(this,typeof(ChargingSetActivity));
-				intent.PutExtra("serviceType",(int)ServiceType.Admin);
+				intent.PutExtra("serviceType",serviceType);
 				StartActivityForResult(intent,ChargingSet);
 				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
 			};
 			//todo:laoddata
 			LoadData();
+		}
+		private string GetActivityDesc(int _serviceType)
+		{
+			string desc = string.Empty;
+			switch (_serviceType) {
+			case (int)ServiceType.Admin:
+				desc = "管理员设置";
+				break;
+			case (int)ServiceType.HouseKeep:
+				desc = "家政设置";
+				break;
+			case (int)ServiceType.Errand:
+				desc = "跑腿设置";
+				break;
+			case (int)ServiceType.Nurse:
+				desc = "护理设置";
+				break;
+
+			}
+			return desc;
 		}
 		/// <summary>
 		/// 赋值

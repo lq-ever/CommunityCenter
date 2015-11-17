@@ -7,6 +7,6 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tyle="@style/pulltorefresh_lv"
+        style="@style/pulltorefresh_lv"
         android:id="@+id/lv_bankType" />
 </LinearLayout>

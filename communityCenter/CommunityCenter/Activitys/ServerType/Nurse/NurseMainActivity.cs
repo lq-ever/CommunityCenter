@@ -10,12 +10,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using CommunityCenter.Activitys.ServerType;
 
 namespace CommunityCenter.Activitys.Nurse
 {
 	[Activity (Theme = "@style/MyCustomTheme")]			
 	public class NurseMainActivity : Activity
 	{
+		private RelativeLayout rl_nurse_Set, rl_nurse_servicetype, rl_nurse_ordersearch;
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -41,6 +43,32 @@ namespace CommunityCenter.Activitys.Nurse
 			var tv_desc = FindViewById<TextView> (Resource.Id.tv_desc);
 			tv_desc.Text = "护理服务";
 
+			//护理服务设置
+			rl_nurse_Set = FindViewById<RelativeLayout> (Resource.Id.rl_nurse_Set);
+			rl_nurse_Set.Click += (sender, e) => 
+			{
+				var intent = new Intent(this,typeof(ServiceSetActivity));
+				intent.PutExtra("serviceType",(int)ServiceType.Nurse);
+				StartActivity(intent);
+				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			};
+			//护理服务类型
+			rl_nurse_servicetype = FindViewById<RelativeLayout>(Resource.Id.rl_nurse_servicetype);
+			rl_nurse_servicetype.Click += (sender, e) => 
+			{
+				StartActivity(typeof(NurseServiceActivity));
+				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			};
+
+			//护理预约查询
+			rl_nurse_ordersearch = FindViewById<RelativeLayout>(Resource.Id.rl_nurse_ordersearch);
+			rl_nurse_ordersearch.Click += (object sender, EventArgs e) => 
+			{
+				var intent = new Intent(this,typeof(ServiceOrderSearchActivity));
+				intent.PutExtra("serviceType",(int)ServiceType.Nurse);
+				StartActivity(intent);
+				OverridePendingTransition(Android.Resource.Animation.SlideInLeft,Android.Resource.Animation.SlideOutRight);
+			};
 		}
 	}
 }

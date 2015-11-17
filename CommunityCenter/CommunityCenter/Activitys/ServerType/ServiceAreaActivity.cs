@@ -54,6 +54,8 @@ namespace CommunityCenter.Activitys.ServerType
 			btn_Confirm = FindViewById<Button> (Resource.Id.btn_Confirm);
 			btn_Confirm.Click += (sender, e) => 
 			{
+				startServiceArea = edit_startServiceArea.Text;
+				endServiceArea = edit_endServiceArea.Text;
 				var intent = new Intent();
 				intent.PutExtra("startServiceArea",startServiceArea);
 				intent.PutExtra("endServiceArea",endServiceArea);

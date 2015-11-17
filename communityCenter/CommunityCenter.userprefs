@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="CommunityCenter\CommunityCenter.csproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CommunityCenter\Adapter\HouseKeepServiceListAdapter.cs">
     <Files>
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AdminSetActivity.cs" Line="67" Column="1" />
-      <File FileName="CommunityCenter\Activitys\ServerType\ServiceDescActivity.cs" Line="28" Column="52" />
-      <File FileName="CommunityCenter\Activitys\ServerType\ServiceTimeActivity.cs" Line="111" Column="1" />
-      <File FileName="CommunityCenter\Common\DatePickDialogUtil.cs" Line="54" Column="33" />
-      <File FileName="CommunityCenter\Common\TimePickDialogUtil.cs" Line="35" Column="18" />
-      <File FileName="CommunityCenter\Activitys\ServerType\Admin\AlarmRecordsActivity.cs" Line="113" Column="44" />
+      <File FileName="CommunityCenter\Activitys\ServerType\HouseKeep\HouseKeepServiceActivity.cs" Line="74" Column="72" />
+      <File FileName="CommunityCenter\Activitys\Finance\ChooseBankTypeActivity.cs" Line="83" Column="70" />
+      <File FileName="CommunityCenter\Adapter\HouseKeepServiceListAdapter.cs" Line="18" Column="34" />
+      <File FileName="CommunityCenter\Common\Enum.cs" Line="67" Column="17" />
+      <File FileName="CommunityCenter\Activitys\ServerType\HouseKeep\HouseKeepMainActivity.cs" Line="60" Column="50" />
+      <File FileName="CommunityCenter\Adapter\BankCardInfoListAdapter.cs" Line="31" Column="81" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

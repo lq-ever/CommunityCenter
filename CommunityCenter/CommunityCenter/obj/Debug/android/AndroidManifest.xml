@@ -98,7 +98,7 @@
     <meta-data android:name="JPUSH_APPKEY" android:value="97b8f2bcb8ff74f4ea1559d2" />
     <!--  使用百度地图API-->
     <!-- release版 AK -->
-    <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="3nHrsEhS3RmqKnAhrVqloa8G" />
+    <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="z2z5EqSaiAHYlZRR7OWGfpMy" />
     <!--- debug版 AK -->
     <!--		<meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="9WsxQZv9L0lQakclbH4xrjzG" />-->
     <activity android:theme="@style/AppTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.MainActivity" />
@@ -137,7 +137,6 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.BindGuardianActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmRecordsActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.HealthRecordsActivity" />
-    <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AdminSetActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.GuardianDetailInfoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmDetailInfoActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5c7257cdfcb795366cce7847d1656b9e0.AlarmLocationActivity" />
@@ -165,6 +164,12 @@
     <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceAreaActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceDescActivity" />
     <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ChargingSetActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md5d5153ed12f26edea8053de74242c11a2.ServiceSetActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.ServiceOrderSearchActivity" />
+    <activity android:theme="@style/MyCustomTheme" android:name="md52068126e7314a21b5f33c083a4f743f3.HouseKeepServiceActivity" />
+    <activity android:label="NurseServiceActivity" android:name="md52068126e7314a21b5f33c083a4f743f3.NurseServiceActivity" />
+    <activity android:label="ErrandServiceActivity" android:name="md52068126e7314a21b5f33c083a4f743f3.ErrandServiceActivity" />
+    <activity android:label="ServiceOrderdetailActivity" android:name="md52068126e7314a21b5f33c083a4f743f3.ServiceOrderdetailActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.lelaozu.communitycenter.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

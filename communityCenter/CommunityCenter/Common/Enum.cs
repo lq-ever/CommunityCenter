@@ -48,7 +48,9 @@ namespace CommunityCenter
 		ChargeWater=21//水缴费
 			
 	}
-
+	/// <summary>
+	/// 服务类型
+	/// </summary>
 	public enum ServiceType
 	{
 		Admin=0,//管理员
@@ -70,10 +72,10 @@ namespace CommunityCenter
 		HouseKeep_Moon=16,//月嫂
 		Errand_OneToTwo=17,//1-2km
 		Errand_TwoToThree=18,//2-3km,
-		Errand_ThreeToFour,//3-4Km,
-		Errand_FourToFive,//4-5km,
-		Errand_FiveToSix,//5-6km,
-		Errand_SixMore//6km以上
+		Errand_ThreeToFour=19,//3-4Km,
+		Errand_FourToFive=20,//4-5km,
+		Errand_FiveToSix=21,//5-6km,
+		Errand_SixMore=22//6km以上
 
 	}
 
@@ -89,8 +91,17 @@ namespace CommunityCenter
 		Friday=5,
 		Saturday=6,
 		Sunday=7
+	}
 
-
+	/// <summary>
+	/// 预约状态
+	/// </summary>
+	public enum ServiceOrderStatus
+	{
+		All=1,//所有
+		Todo=2,//待处理
+		SucessOrder=3,//成功预约
+		Done=4//完成
 	}
 
 }

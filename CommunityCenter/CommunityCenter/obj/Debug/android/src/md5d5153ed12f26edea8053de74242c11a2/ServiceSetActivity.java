@@ -1,7 +1,7 @@
-package md5c7257cdfcb795366cce7847d1656b9e0;
+package md5d5153ed12f26edea8053de74242c11a2;
 
 
-public class AdminSetActivity
+public class ServiceSetActivity
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class AdminSetActivity
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
 			"";
-		mono.android.Runtime.register ("CommunityCenter.Activitys.ServerType.Admin.AdminSetActivity, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", AdminSetActivity.class, __md_methods);
+		mono.android.Runtime.register ("CommunityCenter.Activitys.ServerType.ServiceSetActivity, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ServiceSetActivity.class, __md_methods);
 	}
 
 
-	public AdminSetActivity () throws java.lang.Throwable
+	public ServiceSetActivity () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == AdminSetActivity.class)
-			mono.android.TypeManager.Activate ("CommunityCenter.Activitys.ServerType.Admin.AdminSetActivity, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == ServiceSetActivity.class)
+			mono.android.TypeManager.Activate ("CommunityCenter.Activitys.ServerType.ServiceSetActivity, CommunityCenter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

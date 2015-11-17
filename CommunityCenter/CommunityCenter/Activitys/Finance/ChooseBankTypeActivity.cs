@@ -78,9 +78,9 @@ namespace CommunityCenter.Activitys.Finance
 			//todo:调用webservice获取数据
 			bankInfoLists.Clear();
 			bankCardInfoListAdapter.Clear();
-			bankCardInfoListAdapter.Add(new BankCardItem(){BankCardTypeId="0",BankCardImageUrl="http://c.lelaozu.com/images/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C.png"});
-			bankInfoLists.Add(new BankCardItem(){BankCardTypeId="0",BankCardImageUrl="http://c.lelaozu.com/images/%E5%86%9C%E4%B8%9A%E9%93%B6%E8%A1%8C.png"});
-			bankInfoLists.Add(new BankCardItem(){BankCardTypeId="0",BankCardImageUrl="http://c.lelaozu.com/images/%E9%82%AE%E6%94%BF%E9%93%B6%E8%A1%8C.png"});
+			bankInfoLists.Add(new BankCardItem(){BankCardTypeId="0",BankCardImageUrl="http://c.lelaozu.com/images/%E4%BA%A4%E9%80%9A%E9%93%B6%E8%A1%8C.png"});
+			bankInfoLists.Add(new BankCardItem(){BankCardTypeId="1",BankCardImageUrl="http://c.lelaozu.com/images/%E5%86%9C%E4%B8%9A%E9%93%B6%E8%A1%8C.png"});
+			bankInfoLists.Add(new BankCardItem(){BankCardTypeId="2",BankCardImageUrl="http://c.lelaozu.com/images/%E9%82%AE%E6%94%BF%E9%93%B6%E8%A1%8C.png"});
 			bankCardInfoListAdapter.AddAll(bankInfoLists);
 			bankCardInfoListAdapter.NotifyDataSetChanged();
 		}

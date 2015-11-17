@@ -221,6 +221,15 @@
     <Compile Include="Model\ServerType\WeekItem.cs" />
     <Compile Include="Common\TimePickDialogUtil.cs" />
     <Compile Include="Activitys\ServerType\ServiceSetActivity.cs" />
+    <Compile Include="Activitys\ServerType\ServiceOrderSearchActivity.cs" />
+    <Compile Include="Activitys\ServerType\HouseKeep\HouseKeepServiceActivity.cs" />
+    <Compile Include="Model\ServerType\HouseKeep\HouserKeepServiceItem.cs" />
+    <Compile Include="Adapter\HouseKeepServiceListAdapter.cs" />
+    <Compile Include="Activitys\ServerType\Nurse\NurseServiceActivity.cs" />
+    <Compile Include="Activitys\ServerType\Errand\ErrandServiceActivity.cs" />
+    <Compile Include="Activitys\ServerType\ServiceOrderdetailActivity.cs" />
+    <Compile Include="Model\ServerType\ServiceOrderInfoListItem.cs" />
+    <Compile Include="Adapter\ServiceOrderListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -388,7 +397,6 @@
     <AndroidResource Include="Resources\layout\CertificateLayout.axml" />
     <AndroidResource Include="Resources\layout\AdminMainLayout.axml" />
     <AndroidResource Include="Resources\layout\ErrandMainLayout.axml" />
-    <AndroidResource Include="Resources\layout\HouseKeepMainLayout.axml" />
     <AndroidResource Include="Resources\layout\NurseMainLayout.axml" />
     <AndroidResource Include="Resources\layout\GuardianApplyLayout.axml" />
     <AndroidResource Include="Resources\layout\getApplyInfoListItemView.axml" />
@@ -451,6 +459,20 @@
     <AndroidResource Include="Resources\layout\ServiceDescLayout.axml" />
     <AndroidResource Include="Resources\layout\ChargingSetLayout.axml" />
     <AndroidResource Include="Resources\layout\commontimepickerlayout.axml" />
+    <AndroidResource Include="Resources\layout\HouseKeepMainLayout.axml" />
+    <AndroidResource Include="Resources\layout\ServiceOrderSearchLayout.axml" />
+    <AndroidResource Include="Resources\layout\HouseKeepServiceLayout.axml" />
+    <AndroidResource Include="Resources\layout\NurseServiceLayout.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_clean.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_cook.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_deal.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_moon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_schoolrun.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_housekeep_wash.png" />
+    <AndroidResource Include="Resources\layout\ServiceAllListitemView.axml" />
+    <AndroidResource Include="Resources\layout\housekeepServiceListItemView.axml" />
+    <AndroidResource Include="Resources\layout\ServiceOrderdetailLayout.axml" />
+    <AndroidResource Include="Resources\layout\serviceOrderListItemView.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
